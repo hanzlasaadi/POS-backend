@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable no-use-before-define */
 /**
  * Module dependencies.
@@ -5,7 +6,25 @@
 
 const debug = require('debug')('newproject:server');
 const http = require('http');
-const app = require('../app');
+const dotenv = require('dotenv');
+const mongoose = require('mongoose');
+const app = require('./app');
+
+// Connect config.env file with server
+dotenv.config({ path: `./config.env` });
+
+// Connect to DataBase
+const DB = process.env.DB_URL.replace('<password>', process.env.DB_PASS);
+
+mongoose
+  .connect(DB)
+  .then(() => {
+    console.log('DB connection sucessfull!!!');
+  })
+  .catch((err) => {
+    console.log("Could'nt connect to database!");
+    console.log('error: ', err);
+  });
 
 /**
  * Get port from environment and store in Express.
