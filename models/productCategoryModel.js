@@ -23,6 +23,14 @@ const productCategorySchema = mongoose.Schema({
     type: String,
   },
   stepsToChoose: [stepsToChooseSchema],
+  // typeOfProducts: {
+  //   type: mongoose.Schema.ObjectId,
+  //   ref: 'Product',
+  //   required: [
+  //     true,
+  //     'A product category (Bubble tea) must have a referance to a product type (milk, fruit, etc)!',
+  //   ],
+  // },
   createdDate: {
     type: Date,
     default: Date.now,

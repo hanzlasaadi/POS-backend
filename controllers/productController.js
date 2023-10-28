@@ -1,14 +1,17 @@
+const ProductCategory = require('../models/productCategoryModel');
 const Product = require('../models/productModel');
 
 exports.newProduct = async (req, res, next) => {
   try {
+    const { _id } = await ProductCategory.findOne({
+      name: req.body.productCategory,
+    });
     const productData = {
       name: req.body.name,
-      productCategory: (
-        await Product.findOne({ name: req.body.productCategory })
-      ).id,
+      productsList: req.body.productsList,
+      productCategory: _id,
       available: req.body.available,
-      image: req.body.rating,
+      image: req.body.image,
       createdDate: req.body.createdDate,
     };
 
@@ -19,7 +22,7 @@ exports.newProduct = async (req, res, next) => {
     res.status(201).json({
       status: 'success',
       message: 'New Product successfully added',
-      data: productData,
+      data: newProduct,
     });
   } catch (error) {
     res.status(400).json({
