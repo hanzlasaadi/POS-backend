@@ -1,1 +1,117 @@
-hanzlaTemp
+{
+  name: "Pizzas",
+  available: true,
+  typeOfFood: "solid",
+  stepsToChoose: [
+    {
+      stepName: "Size (inches)",
+      options: [
+        {
+          type: 7,
+          image: "image_url1",
+          price: 6.99
+        },
+        {
+          type: 10,
+          image: "image_url2",
+          price: 8.99
+        },
+        {
+          type: 14,
+          image: "image_url3",
+          price: 10.99
+        }
+      ]
+    },
+    {
+      stepName: "Double Cheese",
+      options: [
+        {
+          type: "yes",
+          image: "image_url1",
+          price: 1.99
+        },
+        {
+          type: "no",
+          image: "image_url2",
+          price: 0
+        }
+      ]
+    },
+    {
+      stepName: "Double Meat",
+      options: [
+        {
+          type: "yes",
+          image: "image_url1",
+          price: 2.99
+        },
+        {
+          type: "no",
+          image: "image_url2",
+          price: 0
+        }
+      ]
+    },
+    {
+      stepName: "Double Veggie",
+      options: [
+        {
+          type: "yes",
+          image: "image_url1",
+          price: 2.99
+        },
+        {
+          type: "no",
+          image: "image_url2",
+          price: 0
+        }
+      ]
+    },
+    {
+      stepName: "Sauce (any 2)",
+      options: [
+        {
+          type: "Mayo",
+          image: "image_url1",
+          price: 2.99
+        },
+        {
+          type: "Ketchup",
+          image: "image_url2",
+          price: 0
+        },
+        {
+          type: "Chilli Sauce",
+          image: "image_url2",
+          price: 0
+        },
+        {
+          type: "Chipotle Sauce",
+          image: "image_url2",
+          price: 0
+        },
+        {
+          type: "Sweet Chilli",
+          image: "image_url2",
+          price: 0
+        },
+        {
+          type: "Garlic Mayo",
+          image: "image_url2",
+          price: 0
+        },
+        {
+          type: "Salsa",
+          image: "image_url2",
+          price: 0
+        },
+        {
+          type: "Honey Mustard",
+          image: "image_url2",
+          price: 0
+        }
+      ]
+    }
+  ]
+}

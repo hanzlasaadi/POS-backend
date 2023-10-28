@@ -5,6 +5,8 @@ exports.newProductCategory = async (req, res, next) => {
     const productCategoryData = {
       name: req.body.name,
       available: req.body.available,
+      typeOfFood: req.body.typeOfFood,
+      stepsToChoose: req.body.stepsToChoose,
       image: req.body.image,
       createdDate: req.body.createdDate,
     };
@@ -12,15 +14,19 @@ exports.newProductCategory = async (req, res, next) => {
 
     // req.body = productCategoryData;
 
-    await productCategoryModel.create(productCategoryData);
-    res.status(200).json({
+    const newProductCategory =
+      await productCategoryModel.create(productCategoryData);
+
+    if (!newProductCategory)
+      throw new Error("New Product Category could'nt be created");
+    res.status(201).json({
       status: 'success',
-      message: 'successfully saved data!',
+      message: 'New Product Category successfully saved!',
       data: productCategoryData,
     });
   } catch (error) {
-    res.status(404).json({
-      status: 'Uncaught Error Found!',
+    res.status(400).json({
+      status: 'error',
       message: error.message,
     });
   }
@@ -36,7 +42,7 @@ exports.getAllProductCategories = async (req, res, next) => {
     });
   } catch (error) {
     res.status(404).json({
-      status: 'Uncaught Error Found!',
+      status: 'error',
       message: error.message,
     });
   }
