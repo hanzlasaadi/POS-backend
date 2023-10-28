@@ -1,8 +1,10 @@
+/* eslint-disable import/no-extraneous-dependencies */
 const createError = require('http-errors');
 const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
+const cors = require('cors');
 
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
@@ -10,6 +12,9 @@ const productRoute = require('./routes/productRoute');
 const productCategoryRoute = require('./routes/productCategoryRoute');
 
 const app = express();
+
+// enable all cors requests
+app.use(cors());
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
