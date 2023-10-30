@@ -1,0 +1,1602 @@
+[
+  {
+    "name": "Pizzas",
+    "productsList": [
+      {
+        "name": "Cheese & Tomato",
+        "image": "cheese & tomato.jpeg",
+        "price": 0,
+        "description": "Tomato base and lots of cheese",
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Veggie Delight",
+        "image": "veggie delight.jpeg",
+        "price": 0,
+        "description": "Prime dough, artisanal cheese, signature sauce, savory onions, earthy mushrooms, zesty peppers, ripe tomatoes, and sweet corn kernels",
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Spicy Veggie Delight",
+        "image": "spicy veggie delight.jpeg",
+        "price": 0,
+        "description": "Handcrafted dough with top-tier cheese, our secret homemade sauce, onions, mushrooms, green peppers, green chili, jalapenos, and fresh tomatoes.",
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Countryside Classic",
+        "image": "countryside classic.jpeg",
+        "price": 0,
+        "description": "Crafted dough, premium cheese, our homemade tomato sauce, turkey ham, mushrooms, and pineapple.",
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Pepperoni Perfection",
+        "image": "pepperoni perfection.jpeg",
+        "price": 0,
+        "description": "Handcrafted dough, premium cheese, our signature homemade tomato sauce, pepperoni, and extra cheese.",
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Fiery Delight",
+        "image": "fiery delight.jpeg",
+        "price": 0,
+        "description": "Artisanal dough, premium cheese, our secret tomato sauce, spicy beef, onions, and jalapenos.",
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Lone Star BBQ Feast",
+        "image": "lone star bbq feast.jpeg",
+        "price": 0,
+        "description": "Crafted dough, premium cheese, our homemade special tomato sauce, onions, mixed peppers, and tender BBQ chicken.",
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Peri Peri Marvel",
+        "image": "peri peri marvel.jpeg",
+        "price": 0,
+        "description": "Artisanal dough, premium cheese, our special homemade tomato sauce, Peri Peri chicken, onions, mixed peppers, and jalapenos.",
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Tantalizing Chicken Tikka Delight",
+        "image": "tantalizing chicken tikka delight.jpeg",
+        "price": 0,
+        "description": "Handcrafted dough, premium cheese, and our homemade special tomato sauce topped with succulent Chicken Tikka.",
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Tandoori Spice Sensation",
+        "image": "tandoori spice sensation.jpeg",
+        "price": 0,
+        "description": "Handcrafted dough, premium cheese, our special homemade tomato sauce, Chicken Tikka, onions, green peppers, and jalapenos for a fiery kick.",
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Seafood Special",
+        "image": "seafood special.jpeg",
+        "price": 0,
+        "description": "Artisanal dough, premium cheese, our special homemade tomato sauce, prawns, tuna, and sweet corn for a seafood delight.",
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Signature Treats Delight",
+        "image": "signature treats delight.jpeg",
+        "price": 0,
+        "description": "Crafted dough, premium cheese, our special homemade tomato sauce, Peri Peri chicken, onions, sweet corn, mushrooms, and a hint of green chili for a spicy twist.",
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Ultimate Meat Feast",
+        "image": "ultimate meat feast.jpeg",
+        "price": 0,
+        "description": "Handcrafted dough, premium cheese, our special homemade tomato sauce, pepperoni, salami, meatballs, and turkey ham for a hearty meat lover's delight.",
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Fifty Fifty Extravaganza",
+        "image": "fifty fifty extravaganza.jpeg",
+        "price": 0,
+        "description": "Choose any two pizzas from the above list and we will create half & half.",
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Personalized Pizza",
+        "image": "personalized pizza.jpeg",
+        "price": 0,
+        "description": "Choose any 4 toppings: Tomato, Mushroom, Pepper, Green Chilli, Olives, Onion, Pineapple, Sweet Corn, Jalapeno, Extra Cheese, Pepperoni, Spicy Chicken Tikka, Peri Peri Chicken, or BBQ Chicken.",
+        "stock": 0,
+        "discount": 0
+      }
+    ],
+    "available": true,
+    "image": "subcategory pizzas.jpeg",
+    "productCategory": "653fcb047deba0d31c2972b1"
+  },
+  {
+    "name": "Wraps (Signature)",
+    "productsList": [
+      {
+        "name": "BBQ Chicken",
+        "image": "bbq chicken.jpeg",
+        "price": 0,
+        "description": "Marinated chicken with BBQ sauce, salad, and sauce of your choice",
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Sweet Chilli Chicken",
+        "image": "sweet chilli chicken.jpeg",
+        "price": 0,
+        "description": "Marinated Thai sweet chili chicken, melted cheese with salad, and sauce of your choice",
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Reggae Reggae Chicken Blast",
+        "image": "reggae reggae chicken blast.jpeg",
+        "price": 0,
+        "description": "Grilled chicken breast in Reggae Reggae sauce, flour tortilla wraps",
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Spicy Italian Explosion",
+        "image": "spicy italian explosion.jpeg",
+        "price": 0,
+        "description": "Spicy Italian sausage, mozzarella cheese, flour tortilla wraps",
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Succulent Steak",
+        "image": "succulent steak.jpeg",
+        "price": 0,
+        "description": "Tender strips of steak, provolone cheese, flour tortilla wraps",
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Chipotle Chicken",
+        "image": "chipotle chicken.jpeg",
+        "price": 0,
+        "description": "Grilled chicken breast in smoky chipotle sauce, Monterey Jack cheese, flour tortilla wraps",
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Mega Meat",
+        "image": "mega meat.jpeg",
+        "price": 0,
+        "description": "Sliced ham, pepperoni, salami, seasoned ground beef, bacon, cheddar cheese, flour tortilla wraps",
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Chicken Tikka",
+        "image": "chicken tikka.jpeg",
+        "price": 0,
+        "description": "Succulent chicken tikka pieces, flour tortilla wraps",
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Teriyaki Chicken",
+        "image": "teriyaki chicken.jpeg",
+        "price": 0,
+        "description": "Grilled teriyaki chicken strips, flour tortilla wraps",
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Nacho Chicken Salsa",
+        "image": "nacho chicken salsa.jpeg",
+        "price": 0,
+        "description": "Seasoned grilled chicken, nacho cheese sauce, flour tortilla wraps",
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Veggie Sensation",
+        "image": "veggie sensation.jpeg",
+        "price": 0,
+        "description": "",
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Mexican Chicken",
+        "image": "mexican chicken.jpeg",
+        "price": 0,
+        "description": "Spicy Mexican-style grilled chicken, Monterey Jack cheese, flour tortilla wraps",
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Chinese Chicken",
+        "image": "chinese chicken.jpeg",
+        "price": 0,
+        "description": "Tender strips of chicken stir-fried in a savory Chinese sauce, flour tortilla wraps",
+        "stock": 0,
+        "discount": 0
+      }
+    ],
+    "available": true,
+    "image": "subcategory wraps.jpeg",
+    "productCategory": "653fcb047deba0d31c2972c8"
+  },
+  {
+    "name": "Burgers",
+    "productsList": [
+      {
+        "name": "Succulent Chicken",
+        "image": "succulent chicken.jpeg",
+        "price": 0,
+        "description": "",
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Double Decker Steak",
+        "image": "double decker steak.jpeg",
+        "price": 0,
+        "description": "",
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Spicy Italian",
+        "image": "spicy italian.jpeg",
+        "price": 0,
+        "description": "Pepperoni, Salami",
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Smash Patty",
+        "image": "smash patty.jpeg",
+        "price": 0,
+        "description": "",
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Mega Melt",
+        "image": "mega melt.jpeg",
+        "price": 0,
+        "description": "Pepperoni, Salami, Ham",
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Veggie Patty",
+        "image": "veggie patty.jpeg",
+        "price": 0,
+        "description": "",
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Chipotle Zinger",
+        "image": "chipotle zinger.jpeg",
+        "price": 0,
+        "description": "",
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Fish o Fillet",
+        "image": "fish o fillet.jpeg",
+        "price": 0,
+        "description": "",
+        "stock": 0,
+        "discount": 0
+      }
+    ],
+    "available": true,
+    "image": "subcategory burgers.jpeg",
+    "productCategory": "653fcb047deba0d31c2972e5"
+  },
+  {
+    "name": "Fruit Flavour",
+    "productsList": [
+      {
+        "name": "Mango",
+        "description": "Tapioca Pearls, Mango Puree, Black or Green Tea Bags, Sugar, Ice, Milk or Non-Dairy Alternatives, Mango Syrup or Flavoring (optional)",
+        "image": "mango.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Passion Fruit",
+        "description": "Passion fruit syrup, tapioca pearls, black tea or green tea, milk, ice cubes, sugar, boba straws",
+        "image": "passion fruit.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Strawberry",
+        "description": "Strawberry Syrup, tapioca pearls, black tea or green tea, milk, ice cubes, sugar, boba straws",
+        "image": "strawberry.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Peach",
+        "description": "Black or green tea (brewed and cooled), Peach flavoring or peach syrup, Tapioca pearls (boba), Sugar or sweetener (adjust to taste), Ice cubes (optional), Milk or non-dairy milk (optional)",
+        "image": "peach.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Lychee",
+        "description": "Black or green tea (brewed and cooled) or lychee juice, Lychee flavoring or lychee syrup, Tapioca pearls (boba), Sugar or sweetener (adjust to taste), Ice cubes (optional), Milk or non-dairy milk (optional)",
+        "image": "lychee.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Lemon",
+        "description": "Black or green tea (brewed and cooled) or lemon juice, Lemon flavoring or lemon syrup, Tapioca pearls (boba), Sugar or sweetener (adjust to taste), Ice cubes (optional), Milk or non-dairy milk (optional)",
+        "image": "lemon.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Guava",
+        "description": "Black or green tea (brewed and cooled) or guava juice, Guava flavoring or guava syrup, Tapioca pearls (boba), Sugar or sweetener (adjust to taste), Ice cubes (optional), Milk or non-dairy milk (optional)",
+        "image": "guava.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Watermelon",
+        "description": "Watermelon juice or puree, Tapioca pearls (boba), Sugar or sweetener (adjust to taste), Ice cubes, Watermelon chunks or cubes, Black or green tea, Milk or non-dairy milk (optional)",
+        "image": "watermelon.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Raspberry",
+        "description": "Raspberry puree or raspberry syrup, Tapioca pearls (boba), Sugar or sweetener (adjust to taste), Ice cubes, Black or green tea (brewed and cooled, optional), Milk or non-dairy milk (optional)",
+        "image": "raspberry.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Pineapple",
+        "description": "Pineapple juice or pineapple puree, Tapioca pearls (boba), Sugar or sweetener (adjust to taste), Ice cubes, Coconut milk or regular milk, Black or green tea",
+        "image": "pineapple.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Peach + Mango",
+        "description": "Peach puree or peach syrup, Mango puree or mango syrup, Tapioca pearls (boba), Sugar or sweetener (adjust to taste), Ice cubes, Black or green tea (brewed and cooled, optional), Milk or non-dairy milk (optional)",
+        "image": "peach mango.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Peach + Lychee",
+        "description": "Peach puree or peach syrup, Lychee puree or lychee syrup, Tapioca pearls (boba), Sugar or sweetener (adjust to taste), Ice cubes, Black or green tea, Milk or non-dairy milk (optional)",
+        "image": "peach lychee.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Mango + Lychee",
+        "description": "Mango puree or mango syrup, Lychee puree or lychee syrup, Tapioca pearls (boba), Sugar or sweetener (adjust to taste), Ice cubes, Black or green tea (brewed and cooled, optional), Milk or non-dairy milk (optional)",
+        "image": "mango lychee.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Passion + Mango",
+        "description": "Passion fruit puree or passion fruit syrup, Mango puree or mango syrup, Tapioca pearls (boba), Sugar or sweetener (adjust to taste), Ice cubes, Black or green tea (brewed and cooled, optional), Milk or non-dairy milk (optional)",
+        "image": "passion mango.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      }
+    ],
+    "available": true,
+    "image": "subcategory fruit flavour.jpeg",
+    "productCategory": "653fcb047deba0d31c2972fe"
+  },
+  {
+    "name": "Milk Flavour",
+    "productsList": [
+      {
+        "name": "Taro",
+        "description": "Taro-flavored milk, tapioca pearls, ice cubes, brown sugar syrup (optional)",
+        "image": "taro.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Coconut Milk",
+        "description": "Coconut milk, tapioca pearls, ice cubes, brown sugar syrup (optional)",
+        "image": "coconut milk.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Brown Sugar",
+        "description": "Brown sugar-flavored milk, tapioca pearls, ice cubes, brown sugar syrup",
+        "image": "brown sugar.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Honey Dew",
+        "description": "Honeydew-flavored milk, tapioca pearls, ice cubes, brown sugar syrup (optional)",
+        "image": "honey dew.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Black Sesame",
+        "description": "Black sesame-flavored milk, tapioca pearls, ice cubes, brown sugar syrup (optional)",
+        "image": "black sesame.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Matcha",
+        "description": "Matcha-flavored milk, tapioca pearls, ice cubes, brown sugar syrup (optional)",
+        "image": "matcha.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Cotton Candy",
+        "description": "Cotton candy-flavored milk, tapioca pearls, ice cubes, brown sugar syrup (optional)",
+        "image": "cotton candy.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      }
+    ],
+    "available": true,
+    "image": "subcategory milk flavour.jpeg",
+    "productCategory": "653fcb047deba0d31c2972fe"
+  },
+  {
+    "name": "Mocktails",
+    "productsList": [
+      {
+        "name": "Pina Colada",
+        "description": "A vintage mixture of pineapple and coconut flavors",
+        "image": "pina colada.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Watermelon Sensation",
+        "description": "Mixing watermelon and lemon flavors with a touch of mint",
+        "image": "watermelon sensation.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Cinderella",
+        "description": "Mixing passionfruit, pineapple, and lemon flavors together",
+        "image": "cinderella.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Raspberry Mojito",
+        "description": "Mixing strawberry and raspberry flavors with a touch of mint. The sparkling version adds a summer vibe to the drink.",
+        "image": "raspberry mojito.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Berrylicious",
+        "description": "The drink has a special blend including strawberry and raspberry flavor and black tea with a hint of vanilla.",
+        "image": "berrylicious.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      }
+    ],
+    "available": true,
+    "image": "subcategory mocktails.jpeg",
+    "productCategory": "653fcb047deba0d31c2972fe"
+  },
+  {
+    "name": "Waffles",
+    "productsList": [
+      {
+        "name": "Lemon & Sugar",
+        "description": "Belgian Waffle or Crepe with Lemon Slice, Lemon Juice Sugar and Luxury Vanilla Ice Cream",
+        "image": "lemon and sugar.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Delight & Strawberry",
+        "description": "Belgian Waffle or Crepe with Fresh Strawberry Slice, Belgian Chocolate & Strawberry Sauce and Luxury Vanilla Ice Cream",
+        "image": "delight and strawberry.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Bananalicious",
+        "description": "Belgian Waffle or Crepe with Fresh Banana Slice, Belgian Chocolate Sauce & Luxury Vanilla Ice Cream",
+        "image": "bananalicious.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Crazy Marshmallow",
+        "description": "Belgian Waffle or Crepe with Belgian Chocolate Sauce, White Chocolate Sauce, Mini Marshmallows and Luxury Vanilla Ice Cream",
+        "image": "crazy marshmallow.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Peanut Butter",
+        "description": "Belgian Waffle or Crepe with warm Peanut Butter and Luxury Vanilla Ice Cream",
+        "image": "peanut butter.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Maltesers Sensation",
+        "description": "Belgian Waffle or Crepe with Belgian Chocolate Sauce, White Chocolate Sauce, Maltesers, White Chocolate Shavings and Luxury Vanilla Ice Cream",
+        "image": "maltesers sensation.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Strawberry Sensation Waffle",
+        "description": "Fresh Strawberries, Crushed Digestive Biscuits, Drizzled with White Chocolate Sauce, Sprinkles Optional",
+        "image": "strawberry sensation waffle.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Banofee Island",
+        "description": "Fresh Bananas, Drizzled White Chocolate and Toffee Sauces",
+        "image": "banofee island.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Nutella Waffle",
+        "description": "Layers of Warm Melted Nutella Drizzled with Nuts",
+        "image": "nutella waffle.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Milk Chocolate Waffle",
+        "description": "Belgian Milk Chocolate topped with Milk Chocolate Chips and Fresh Strawberries",
+        "image": "milk chocolate waffle.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "White Chocolate Waffle",
+        "description": "White Chocolate topped with Milk Chocolate Chips and Fresh Strawberries",
+        "image": "white chocolate waffle.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Oreo Blast Waffle",
+        "description": "Crushed Oreos topped with White Chocolate Chips and Fresh Strawberries",
+        "image": "oreo blast waffle.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Kinder Craze Waffle",
+        "description": "Fresh Waffle topped Kinder Bueno, Belgian Chocolate Chips and Chocolate Sauce",
+        "image": "kinder craze waffle.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Brownie Explosion Waffle",
+        "description": "Chocolate Sauce, Chocolate Sprinkles topped with Brownie Pieces",
+        "image": "brownie explosion waffle.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Cookie Dough Surprise Waffle",
+        "description": "Freshly made cookie dough Waffle topped with White Chocolate and Chocolate Sauce",
+        "image": "cookie dough surprise waffle.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Ferrero Heaven Waffle",
+        "description": "Fresh Waffle with Crushed Ferrero Rochers with Drizzled Nutella topped with Chocolate Sprinkles",
+        "image": "ferrero heaven waffle.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Foodelicious Special Waffle",
+        "description": "Crushed Ferrero Rochers with Nutella, Fresh Strawberries and Bananas, Chocolate Brownie pieces with Drizzled with Chocolate",
+        "image": "foodelicious special waffle.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      }
+    ],
+    "available": true,
+    "image": "subcategory waffles.jpeg",
+    "productCategory": "653fcb047deba0d31c29733d"
+  },
+  {
+    "name": "Milkshakes",
+    "productsList": [
+      {
+        "name": "Ferrero Heaven Milkshake",
+        "description": "Ferrero Rocher, Fresh Cream with Chocolate Sauce and Sprinkles",
+        "image": "ferrero heaven milkshake.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Kinder Sensation Milkshake",
+        "description": "Milk or White Kinder Bueno Chocolate, Fresh Cream topped with Chocolate Sauce and Sprinkles",
+        "image": "kinder sensation milkshake.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Malsters Galore Milkshake",
+        "description": "Malsters Milk Chocolate, Fresh Cream, Chocolate Sauce topped with Sprinkles",
+        "image": "malsters galore milkshake.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Aero Wave Milkshake",
+        "description": "Aero Mint Chocolate, Fresh Cream, Chocolate Sauce topped with Crushed Oreos",
+        "image": "aero wave milkshake.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Snickers Surprise Milkshake",
+        "description": "Snickers Chocolate, Fresh Cream, Chocolate Sauce and Sprinkles",
+        "image": "snickers surprise milkshake.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Luxurious Lion Milkshake",
+        "description": "Lindor Milk Chocolate, Fresh Cream topped with Chocolate Sauce and Sprinkles",
+        "image": "luxurious lion milkshake.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Lotus Biscoff Milkshake",
+        "description": "Lotus Biscoff, Chocolate Sauce, Fresh Cream topped with crushed Biscoff Biscuit",
+        "image": "lotus biscoff milkshake.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Blue Millions Milkshake",
+        "description": "White Chocolate, Fresh Cream Blue Millions topped with Bubble Gum Sauce",
+        "image": "blue millions milkshake.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Caramel Bliss Milkshake",
+        "description": "Mixed With Salted Caramel Crispy Balls, Fresh Cream and Salted Caramel Sauce",
+        "image": "caramel bliss milkshake.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Bananalicious Island Milkshake",
+        "description": "Fresh Banana with Nutella, Fresh Cream topped with Chocolate Sauce",
+        "image": "bananalicious island milkshake.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Cookie Delight Milkshake",
+        "description": "Cookie Dough, Fresh Cream and Chocolate Sauce",
+        "image": "cookie delight milkshake.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Strawberry Dreamland Milkshake",
+        "description": "Fresh Strawberries, White Chocolate, Fresh Cream topped with Strawberry Sauce",
+        "image": "strawberry dreamland milkshake.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Oreo Blast Shake Milkshake",
+        "description": "Chocolate Oreos, Fresh Cream, Chocolate Sauce topped with Crushed Oreos",
+        "image": "oreo blast shake milkshake.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Create Your Own Milk Shakes",
+        "description": "Choose your own ingredients and create a customized milkshake!",
+        "image": "create your own milkshakes.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      }
+    ],
+    "available": true,
+    "image": "subcategory milkshakes.jpeg",
+    "productCategory": "653fcb047deba0d31c29731c"
+  },
+  {
+    "name": "Sundaes",
+    "productsList": [
+      {
+        "name": "Fruit Treat",
+        "description": "Strawberry, Banoffee and Mango or Fruit Salad Ice Cream Served with Fresh Strawberries Topped with Luxury Strawberry and Raspberry Sauce, Finished with Whipped Cream, Sprinkles & Wafer",
+        "image": "fruit treat sundae.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Oreo de Great",
+        "description": "Oreo Vanilla and Oreo Ice Cream Crushed Oreos, Luxury Chocolate Sauce, Finished with Whipped Cream, Oreo Biscuit and Wafer",
+        "image": "oreo de great sundae.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Toffee Treat",
+        "description": "Caramel, Milky Bar and Banoffee Ice Cream, Topped with Luxury Toffee and Caramel Sauce, Fudge Pieces, Finished with Whipped Cream, Sprinkles and Wafer",
+        "image": "toffee treat sundae.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Ferrero de Fantastic",
+        "description": "2 X Ferrero and Triple Chocolate Ice Cream, Topped with Nutella Sauce, Finished with Whipped Cream, Ferrero Rocher and Wafer",
+        "image": "ferrero de fantastic sundae.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Surprise Treat",
+        "description": "Oreo, Triple Chocolate and Ferrero Rocher Ice Cream Topped with Oreo Pieces, Oreo Biscuit, Ferrero Rocher, Served with Nutella & White Chocolate Sauce and Wafer",
+        "image": "surprise treat sundae.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Bubblicious Treat",
+        "description": "Bubblegum, Strawberry and Million Ice Cream, Topped with Whipped Cream Finished with Luxury Bubblegum and Strawberry Sauce, Sprinkles, Wafer and Mini Marshmallow",
+        "image": "bubblicious treat sundae.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Kinder Treat",
+        "description": "2 X Kinder Bueno and Triple Chocolate Ice Cream Topped with Kinder Bueno Chocolate and Sprinkles, Served with Whipped Cream, Belgian Milk Chocolate Sauce and White Chocolate Sauce",
+        "image": "kinder treat sundae.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      }
+    ],
+    "available": true,
+    "image": "subcategory sundaes.jpeg",
+    "productCategory": "653fcb047deba0d31c297334"
+  },
+  {
+    "name": "Cookie Dough",
+    "productsList": [
+      {
+        "name": "Milk Chocolate Cookie Dough",
+        "description": "Fresh cookie dough served with a scoop of vanilla gelato ice cream and sauce of your choice",
+        "image": "milk chocolate cookie dough.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Double Chocolate Cookie Dough",
+        "description": "Fresh cookie dough served with a scoop of vanilla gelato ice cream and sauce of your choice",
+        "image": "double chocolate cookie dough.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "White Chocolate Cookie Dough",
+        "description": "Fresh cookie dough served with a scoop of vanilla gelato ice cream and sauce of your choice",
+        "image": "white chocolate cookie dough.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Red Velvet",
+        "description": "Fresh cookie dough with Red Velvet flavor.",
+        "image": "red velvet cookie dough.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      }
+    ],
+    "available": true,
+    "image": "subcategory cookie dough.jpeg",
+    "productCategory": "653fcb047deba0d31c297335"
+  },
+  {
+    "name": "Ice Creams",
+    "productsList": [
+      {
+        "name": "Almond Kulfi (8oz)",
+        "description": "8oz of Almond Kulfi flavored ice cream.",
+        "image": "almond kulfi ice cream.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Billions (8oz)",
+        "description": "8oz of Billions flavored ice cream.",
+        "image": "billions ice cream.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Bubblegum (8oz)",
+        "description": "8oz of Bubblegum flavored ice cream.",
+        "image": "bubblegum ice cream.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Butterscotch (8oz)",
+        "description": "8oz of Butterscotch flavored ice cream.",
+        "image": "butterscotch ice cream.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Caramel Twist (8oz)",
+        "description": "8oz of Caramel Twist flavored ice cream.",
+        "image": "caramel twist ice cream.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Caribbean Coconut (8oz)",
+        "description": "8oz of Caribbean Coconut flavored ice cream.",
+        "image": "caribbean coconut ice cream.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Chocolate Brownie (8oz)",
+        "description": "8oz of Chocolate Brownie flavored ice cream.",
+        "image": "chocolate brownie ice cream.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Double White Chocolate (8oz)",
+        "description": "8oz of Double White Chocolate flavored ice cream.",
+        "image": "double white chocolate ice cream.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Hazelnut (8oz)",
+        "description": "8oz of Hazelnut flavored ice cream.",
+        "image": "hazelnut ice cream.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "I'm Jammin (8oz)",
+        "description": "8oz of I'm Jammin flavored ice cream.",
+        "image": "im jammin ice cream.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Mango (8oz)",
+        "description": "8oz of Mango flavored ice cream.",
+        "image": "mango ice cream.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Mint Chocolate (8oz)",
+        "description": "8oz of Mint Chocolate flavored ice cream.",
+        "image": "mint chocolate ice cream.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Nutty Donatella (8oz)",
+        "description": "8oz of Nutty Donatella flavored ice cream.",
+        "image": "nutty donatella ice cream.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Oreo Blast (8oz)",
+        "description": "8oz of Oreo Blast flavored ice cream.",
+        "image": "oreo blast ice cream.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Paradise Bounty (8oz)",
+        "description": "8oz of Paradise Bounty flavored ice cream.",
+        "image": "paradise bounty ice cream.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Raspberry Ripple (8oz)",
+        "description": "8oz of Raspberry Ripple flavored ice cream.",
+        "image": "raspberry ripple ice cream.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Sensual Strawberry (8oz)",
+        "description": "8oz of Sensual Strawberry flavored ice cream.",
+        "image": "sensual strawberry ice cream.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Taste the Rainbow (8oz)",
+        "description": "8oz of Taste the Rainbow flavored ice cream.",
+        "image": "taste the rainbow ice cream.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Chocolate with Maltesers (8oz)",
+        "description": "8oz of Chocolate with Maltesers flavored ice cream.",
+        "image": "chocolate with maltesers ice cream.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      }
+    ],
+    "available": true,
+    "image": "subcategory ice creams.jpeg",
+    "productCategory": "653fcb047deba0d31c297336"
+  },
+  {
+    "name": "Classic Gelato",
+    "productsList": [
+      {
+        "name": "ROCHER GELATO",
+        "description": "Classic gelato with a rich Ferrero Rocher flavor.",
+        "image": "rocher gelato.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "BUENO GELATO",
+        "description": "Classic gelato with a delightful Kinder Bueno flavor.",
+        "image": "bueno gelato.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "STRAWBERRIES AND CREAM GELATO",
+        "description": "Classic gelato with the sweet taste of strawberries and cream.",
+        "image": "strawberries and cream gelato.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "LOTUS BISCOFF GELATO",
+        "description": "Classic gelato with the delightful Lotus Biscoff cookie flavor.",
+        "image": "lotus biscoff gelato.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "CHOCOLATE FUDGE BROWNIE GELATO",
+        "description": "Classic gelato with rich chocolate fudge brownie pieces.",
+        "image": "chocolate fudge brownie gelato.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "MINT AERO GELATO",
+        "description": "Classic gelato with the refreshing taste of Mint Aero.",
+        "image": "mint aero gelato.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "SALTED CARAMEL GELATO",
+        "description": "Classic gelato with a perfect balance of salted caramel sweetness.",
+        "image": "salted caramel gelato.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "CIOCCOLATO GELATO",
+        "description": "Classic gelato with a classic chocolate flavor.",
+        "image": "cioccolato gelato.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "CINNAMON GELATO",
+        "description": "Classic gelato with a touch of aromatic cinnamon.",
+        "image": "cinnamon gelato.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "PARADISE BOUNTY GELATO",
+        "description": "Classic gelato with a taste of paradise, bounty style.",
+        "image": "paradise bounty gelato.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "HAZELNUT GELATO",
+        "description": "Classic gelato with the nutty goodness of hazelnuts.",
+        "image": "hazelnut gelato.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      }
+    ],
+    "available": true,
+    "image": "subcategory classic gelato.jpeg",
+    "productCategory": "653fcb047deba0d31c297337"
+  },
+  {
+    "name": "Kids Gelato",
+    "productsList": [
+      {
+        "name": "UNICORN GELATO",
+        "description": "A magical unicorn-inspired gelato for kids.",
+        "image": "unicorn gelato.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "BUBBLEGUM GELATO",
+        "description": "Delicious bubblegum-flavored gelato for kids.",
+        "image": "bubblegum gelato.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "AMERICAN BIRTHDAY CAKE GELATO",
+        "description": "Gelato with the fun flavor of an American birthday cake.",
+        "image": "american birthday cake gelato.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "COTTON CANDY GELATO",
+        "description": "Sweet cotton candy-flavored gelato for kids to enjoy.",
+        "image": "cotton candy gelato.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      }
+    ],
+    "available": true,
+    "image": "subcategory kids gelato.jpeg",
+    "productCategory": "653fcb047deba0d31c297338"
+  },
+  {
+    "name": "Savers Menu / Sides",
+    "productsList": [
+      {
+        "name": "Chicken Strips",
+        "description": "",
+        "image": "chicken strips.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Crinkle Wedges",
+        "description": "",
+        "image": "crinkle wedges.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Buffalo Wings",
+        "description": "",
+        "image": "buffalo wings.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Potato Wedges",
+        "description": "",
+        "image": "potato wedges.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Onion Rings",
+        "description": "",
+        "image": "onion rings.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Hash Brown",
+        "description": "",
+        "image": "hash brown.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Mozzarella Sticks",
+        "description": "",
+        "image": "mozzarella sticks.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Spicy Beef Nacho",
+        "description": "ORITOS® nacho tortilla chips, Spicy Beef, melted mozzarella and grated cheese, with spicy salsa. Add jalapenos for extra spice! (V) Suitable for a vegetarian diet",
+        "image": "spicy beef nacho.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Mince Loaded Nacho",
+        "description": "ORITOS® nacho tortilla chips, Spicy Mince, melted mozzarella and grated cheese, with spicy salsa. Add jalapenos for extra spice! (V) Suitable for a vegetarian diet",
+        "image": "mince loaded nacho.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Chicken Nacho",
+        "description": "ORITOS® nacho tortilla chips, Portion of plain Chicken, melted mozzarella and grated cheese, with spicy salsa. Add jalapenos for extra spice! (V) Suitable for a vegetarian diet",
+        "image": "chicken nacho.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Jalapeno Nacho",
+        "description": "ORITOS® nacho tortilla chips, melted mozzarella and grated cheese, with spicy salsa. Jalapenos for extra spice! (V) Suitable for a vegetarian diet",
+        "image": "jalapeno nacho.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Loaded Cheesy Nacho",
+        "description": "ORITOS® nacho tortilla chips, Double portion melted mozzarella and grated cheese, with spicy salsa. Add jalapenos for extra spice! (V) Suitable for a vegetarian diet",
+        "image": "loaded cheesy nacho.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Fish Fingers",
+        "description": "",
+        "image": "fish fingers.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Chicken Popcorn",
+        "description": "",
+        "image": "chicken popcorn.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Cheesy Garlic Slice",
+        "description": "",
+        "image": "cheesy garlic slice.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      }
+    ],
+    "available": true,
+    "image": "subcategory savers menu / sides.jpeg",
+    "productCategory": "653fcb047deba0d31c297339"
+  },
+  {
+    "name": "Drinks",
+    "productsList": [
+      {
+        "name": "Tea (12oz)",
+        "description": "",
+        "image": "tea.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Coffee",
+        "description": "",
+        "image": "coffee.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Latte",
+        "description": "",
+        "image": "latte.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Cappuccino",
+        "description": "",
+        "image": "cappuccino.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Bottle of Water",
+        "description": "",
+        "image": "water.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Coke",
+        "description": "",
+        "image": "coke.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Diet Coke",
+        "description": "",
+        "image": "diet coke.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Coke Zero",
+        "description": "",
+        "image": "coke zero.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "7 Up",
+        "description": "",
+        "image": "7up.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Gatorade",
+        "description": "",
+        "image": "gatorade.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Fruit Shoot",
+        "description": "",
+        "image": "fruit shoot.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Lipton Tea",
+        "description": "",
+        "image": "lipton tea.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Tango Orange 1.25 Ltr",
+        "description": "",
+        "image": "tango orange.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Pepsi Max 1.25 Ltr",
+        "description": "",
+        "image": "pepsi max.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      }
+    ],
+    "available": true,
+    "image": "subcategory drinks.jpeg",
+    "productCategory": "653fcb047deba0d31c29733a"
+  },
+  {
+    "name": "Crisps",
+    "productsList": [
+      {
+        "name": "DORITOS® Tangy Cheese",
+        "description": "Corn, Vegetable Oil, Tangy Cheese Seasoning, Salt",
+        "image": "doritos tangy cheese.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Quavers Cheese",
+        "description": "Potato Starch, Sunflower Oil, Cheese Flavor, Cheese Powder (from Milk), Flavour Enhancer, Rice Flour, Soya Flour, Salt, Yeast Extract, Onion Powder, Cheese Powder (from Milk), Acid (Lactic Acid), Colour (Paprika Extract)",
+        "image": "quavers cheese.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Walkers Ready Salted",
+        "description": "Potatoes, Sunflower Oil (30%), Rapeseed Oil, Salt",
+        "image": "walkers ready salted.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Walkers Cheese & Onion",
+        "description": "Potatoes, Sunflower Oil (24%), Rapeseed Oil, Cheese & Onion Seasoning",
+        "image": "walkers cheese onion.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Double Chocolate Cookie",
+        "description": "All-Purpose Flour, Cocoa Powder, Baking Soda, Salt, Butter, Granulated Sugar, Brown Sugar, Eggs, Vanilla Extract, Chocolate Chips or Chunks, White Chocolate Chips or Chunks (optional), Chopped Nuts (optional)",
+        "image": "double chocolate cookie.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Chocolate Chunk",
+        "description": "Unsalted Butter, Granulated Sugar, Brown Sugar, Large Eggs, Vanilla Extract, All-Purpose Flour, Cocoa Powder, Baking Soda, Salt, Chocolate Chips or Chunks",
+        "image": "chocolate chunk.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "White Chocolate",
+        "description": "Cocoa Butter, Sugar, Milk Solids, Lecithin, Vanilla",
+        "image": "white chocolate.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Red Velvet",
+        "description": "Flour, Cocoa Powder, Baking Powder, Salt, Unsalted Butter, Granulated Sugar, Eggs, Red Food Coloring, Vanilla Extract, White Chocolate Chips or Chunks (common mix-in for red velvet cookies), Cream Cheese Icing (optional, for drizzling or dipping)",
+        "image": "red velvet.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      }
+    ],
+    "available": true,
+    "image": "subcategory crisps.jpeg",
+    "productCategory": "653fcb047deba0d31c29733b"
+  },
+  {
+    "name": "Sauce Dips (2 oz)",
+    "productsList": [
+      {
+        "name": "Mayonnaise",
+        "description": "Classic creamy mayonnaise dip",
+        "image": "mayonnaise dip.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Ketchup",
+        "description": "Traditional tomato ketchup dip",
+        "image": "ketchup dip.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Chilli Sauce",
+        "description": "Spicy chili sauce dip",
+        "image": "chilli sauce dip.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Chipotle Sauce",
+        "description": "Smoky chipotle sauce dip",
+        "image": "chipotle sauce dip.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Sweet Chilli",
+        "description": "Sweet and spicy chili dip",
+        "image": "sweet chilli dip.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Garlic Mayonnaise",
+        "description": "Creamy garlic-flavored mayonnaise dip",
+        "image": "garlic mayonnaise dip.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Honey Mustard",
+        "description": "Sweet and tangy honey mustard dip",
+        "image": "honey mustard dip.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Salsa",
+        "description": "Classic tomato salsa dip",
+        "image": "salsa dip.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      }
+    ],
+    "available": true,
+    "image": "subcategory sauce dips.jpeg",
+    "productCategory": "653fcb047deba0d31c29733c"
+  }
+]

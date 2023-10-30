@@ -1,0 +1,727 @@
+[
+  {
+    "name": "Pizzas",
+    "available": true,
+    "typeOfFood": "solid",
+    "stepsToChoose": [
+      {
+        "stepName": "Size (inches)",
+        "options": [
+          {
+            "type": "7",
+            "image": "7inch.jpeg",
+            "price": 6.99
+          },
+          {
+            "type": "10",
+            "image": "10inch.jpeg",
+            "price": 8.99
+          },
+          {
+            "type": "14",
+            "image": "14inch.jpeg",
+            "price": 10.99
+          }
+        ]
+      },
+      {
+        "stepName": "Double Cheese",
+        "options": [
+          {
+            "type": "yes",
+            "image": "cheese.jpeg",
+            "price": 1.99
+          },
+          {
+            "type": "no",
+            "image": "cheese.jpeg",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "stepName": "Double Meat",
+        "options": [
+          {
+            "type": "yes",
+            "image": "sausages.jpeg",
+            "price": 2.99
+          },
+          {
+            "type": "no",
+            "image": "sausages.jpeg",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "stepName": "Double Veggie",
+        "options": [
+          {
+            "type": "yes",
+            "image": "mashroom.jpeg",
+            "price": 2.99
+          },
+          {
+            "type": "no",
+            "image": "mashroom.jpeg",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "stepName": "Sauce (any 2)",
+        "options": [
+          {
+            "type": "Mayo",
+            "image": "mayo.jpeg",
+            "price": 2.99
+          },
+          {
+            "type": "Ketchup",
+            "image": "ketchup.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Chilli Sauce",
+            "image": "chilli.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Chipotle Sauce",
+            "image": "chipotle.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Sweet Chilli",
+            "image": "sweet chilli.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Garlic Mayo",
+            "image": "garlic mayo.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Salsa",
+            "image": "salsa.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Honey Mustard",
+            "image": "honey.jpeg",
+            "price": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Wraps (Signature)",
+    "available": true,
+    "typeOfFood": "solid",
+    "stepsToChoose": [
+      {
+        "stepName": "Choose Tortilla (Any One)",
+        "options": [
+          {
+            "type": "Plain Flour",
+            "image": "plain flour.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Flour Tomato",
+            "image": "flour tomato.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Flour Spinach",
+            "image": "flour spinach.jpeg",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "stepName": "Would you cheese in it?",
+        "options": [
+          {
+            "type": "Yes",
+            "image": "wraps cheese.jpeg",
+            "price": 0
+          },
+          {
+            "type": "No",
+            "image": "wraps cheese.jpeg",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "stepName": "Would you like meat and Wrap Toaster?",
+        "options": [
+          {
+            "type": "Yes",
+            "image": "wrap toaster.jpeg",
+            "price": 0
+          },
+          {
+            "type": "No",
+            "image": "wrap toaster.jpeg",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "stepName": "Choose Salads (Any 5)",
+        "options": [
+          {
+            "type": "Lettuce",
+            "image": "lettuce.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Pickles",
+            "image": "pickels.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Tomato",
+            "image": "tomato.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Cucumber",
+            "image": "cucumber.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Green Pepper",
+            "image": "green pepper.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Onion",
+            "image": "onion.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Jalapeno",
+            "image": "jalapeno.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Olives",
+            "image": "olives.jpeg",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "stepName": "Choose Sauce (Any 1)",
+        "options": [
+          {
+            "type": "Mayo",
+            "image": "mayo.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Ketchup",
+            "image": "ketchup.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Chilli Sauce",
+            "image": "chilli sauce.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Chipotle Sauce",
+            "image": "chipolte sauce.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Sweet Chilli",
+            "image": "sweet chilli.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Garlic Mayo",
+            "image": "garlic mayo.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Honey Mustard",
+            "image": "honey mustard.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Salsa",
+            "image": "salsa.jpeg",
+            "price": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Burgers",
+    "available": true,
+    "typeOfFood": "solid",
+    "stepsToChoose": [
+      {
+        "stepName": "Would you like cheese on it?",
+        "options": [
+          {
+            "type": "Yes",
+            "image": "cheese.jpeg",
+            "price": 0
+          },
+          {
+            "type": "No",
+            "image": "cheese.jpeg",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "stepName": "Is it Toasted?",
+        "options": [
+          {
+            "type": "Yes",
+            "image": "wrap toaster.jpeg",
+            "price": 0
+          },
+          {
+            "type": "No",
+            "image": "wrap toaster.jpeg",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "stepName": "Choose Salads (Any 3)",
+        "options": [
+          {
+            "type": "Lettuce",
+            "image": "lettuce.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Pickles",
+            "image": "pickels.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Tomato",
+            "image": "tomato.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Cucumber",
+            "image": "cucumber.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Green Pepper",
+            "image": "green pepper.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Onion",
+            "image": "onion.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Jalapeno",
+            "image": "jalapeno.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Olives",
+            "image": "olives.jpeg",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "stepName": "Choose Sauce (Any 1)",
+        "options": [
+          {
+            "type": "Mayo",
+            "image": "mayo.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Katchup",
+            "image": "ketchup.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Chilli Sauce",
+            "image": "chilli sauce.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Chipotle Sauce",
+            "image": "chipolte sauce.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Sweet Chilli",
+            "image": "sweet chilli.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Salsa Sauce",
+            "image": "salsa.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Honey Mustard",
+            "image": "honey mustard.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Garlic Mayo",
+            "image": "garlic mayo.jpeg",
+            "price": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Bubble Tea",
+    "available": true,
+    "typeOfFood": "solid",
+    "stepsToChoose": [
+      {
+        "stepName": "Choose Size (Any 1)",
+        "options": [
+          {
+            "type": "Regular (12OZ)",
+            "image": "regular bubble tea.jpeg",
+            "price": 5.29
+          },
+          {
+            "type": "Large (16OZ)",
+            "image": "large bubble tea.jpeg",
+            "price": 5.99
+          }
+        ]
+      },
+      {
+        "stepName": "Choose Suger Level (Any 1)",
+        "options": [
+          {
+            "type": "0%",
+            "image": "sugar0.jpeg",
+            "price": 0
+          },
+          {
+            "type": "50%",
+            "image": "sugar50.jpeg",
+            "price": 0
+          },
+          {
+            "type": "100%",
+            "image": "sugar100.jpeg",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "stepName": "Choose Popping Ball (Any 1)",
+        "options": [
+          {
+            "type": "Passion Fruit",
+            "image": "passion fruit.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Strawberry",
+            "image": "strawberry.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Peach",
+            "image": "peach.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Lychee",
+            "image": "lychee.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Lemon",
+            "image": "lemon.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Guava",
+            "image": "guava.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Water Melon",
+            "image": "water melon.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Raspberry",
+            "image": "raspberry.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Pineapple",
+            "image": "pineapple.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Mango",
+            "image": "mango.jpeg",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "stepName": "Extra Popping Balls",
+        "options": [
+          {
+            "type": "Passion Fruit",
+            "image": "passion fruit.jpeg",
+            "price": 0.59
+          },
+          {
+            "type": "Strawberry",
+            "image": "strawberry.jpeg",
+            "price": 0.59
+          },
+          {
+            "type": "Peach",
+            "image": "peach.jpeg",
+            "price": 0.59
+          },
+          {
+            "type": "Lychee",
+            "image": "lychee.jpeg",
+            "price": 0.59
+          },
+          {
+            "type": "Lemon",
+            "image": "lemon.jpeg",
+            "price": 0.59
+          },
+          {
+            "type": "Guava",
+            "image": "guava.jpeg",
+            "price": 0.59
+          },
+          {
+            "type": "Water Melon",
+            "image": "water melon.jpeg",
+            "price": 0.59
+          },
+          {
+            "type": "Raspberry",
+            "image": "raspberry.jpeg",
+            "price": 0.59
+          },
+          {
+            "type": "Pineapple",
+            "image": "pineapple.jpeg",
+            "price": 0.59
+          },
+          {
+            "type": "Mango",
+            "image": "mango.jpeg",
+            "price": 0.59
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Milkshakes",
+    "available": true,
+    "typeOfFood": "solid",
+    "stepsToChoose": [
+      {
+        "stepName": "Choose Size (Any one)",
+        "options": [
+          {
+            "type": "Regular 12(oz)",
+            "image": "regular milkshake.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Large 16(oz)",
+            "image": "large milkshake.jpeg",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "stepName": "Choose Ice cream (Any Two)",
+        "options": [
+          {
+            "type": "Almond Kulfi",
+            "image": "almond kulfi.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Billions",
+            "image": "billions.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Bubblegum",
+            "image": "bubblegum.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Butterscotch",
+            "image": "butterscotch.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Caramel Twist",
+            "image": "caramel twist.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Caribbean Coconut",
+            "image": "caribbean coconut.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Chocolate Brownie",
+            "image": "chocolate brownie.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Double White Chocolate",
+            "image": "double white chocolate.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Hazelnut",
+            "image": "hazelnut.jpeg",
+            "price": 0
+          },
+          {
+            "type": "I'M Jammin",
+            "image": "i'm jammin.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Mango",
+            "image": "mango icecream.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Mint Chocolate",
+            "image": "mint chocolate.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Nutty Donatella",
+            "image": "nutty donatella.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Oreo Blast",
+            "image": "oreo blast.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Paradise Bounty",
+            "image": "paradise bounty.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Raspberry Ripple",
+            "image": "raspberry ripple.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Sensual Strawberry",
+            "image": "sensual strawberry.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Taste the Rainbow",
+            "image": "taste the rainbow.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Chocolate with Maltesers",
+            "image": "chocolate with maltesers.jpeg",
+            "price": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Sundaes",
+    "available": true,
+    "typeOfFood": "beverage",
+    "stepsToChoose": []
+  },
+  {
+    "name": "Cookie Dough",
+    "available": true,
+    "typeOfFood": "solid",
+    "stepsToChoose": []
+  },
+  {
+    "name": "Ice Creams",
+    "available": true,
+    "typeOfFood": "solid",
+    "stepsToChoose": []
+  },
+  {
+    "name": "Classic Gelato",
+    "available": true,
+    "typeOfFood": "solid",
+    "stepsToChoose": []
+  },
+  {
+    "name": "Kids Gelato",
+    "available": true,
+    "typeOfFood": "solid",
+    "stepsToChoose": []
+  },
+  {
+    "name": "Savers Menu / Sides",
+    "available": true,
+    "typeOfFood": "mix",
+    "stepsToChoose": []
+  },
+  {
+    "name": "Drinks",
+    "available": true,
+    "typeOfFood": "beverage",
+    "stepsToChoose": []
+  },
+  {
+    "name": "Crisps",
+    "available": true,
+    "typeOfFood": "solid",
+    "stepsToChoose": []
+  },
+  {
+    "name": "Sauce Dips (2 oz)",
+    "available": true,
+    "typeOfFood": "solid",
+    "stepsToChoose": []
+  },
+  {
+    "name": "Waffles",
+    "available": true,
+    "typeOfFood": "solid",
+    "stepsToChoose": []
+  }
+]
