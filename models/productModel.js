@@ -17,7 +17,7 @@ const productsListSchema = mongoose.Schema({
     default: 0,
     validate: {
       validator: function (val) {
-        return val < this.price;
+        return val <= this.price;
       },
       message: 'Discount ({VALUE}) must be lower than the price.',
     },
