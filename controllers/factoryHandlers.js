@@ -20,9 +20,7 @@ exports.getAll = (Model) =>
     res.send({
       status: 'success',
       results: documents.length,
-      data: {
-        data: documents,
-      },
+      data: documents,
     });
   });
 
@@ -43,9 +41,7 @@ exports.getOne = (Model, populateObj) =>
 
     return res.send({
       status: 'success',
-      data: {
-        data: document,
-      },
+      data: document,
     });
   });
 
@@ -74,9 +70,7 @@ exports.updateOne = (Model) =>
 
     res.status(201).json({
       status: 'success',
-      data: {
-        data: newDocument,
-      },
+      data: newDocument,
     });
   });
 

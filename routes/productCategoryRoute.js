@@ -5,7 +5,13 @@ const router = express.Router({ mergeParams: true });
 
 router
   .route('/')
-  .get(productCategoryController.getAllProductCategories)
+  .get(productCategoryController.getAllProductCategory)
   .post(productCategoryController.newProductCategory);
+
+router
+  .route('/:id')
+  .get(productCategoryController.getOne)
+  .patch(productCategoryController.updateProductCategory)
+  .delete(productCategoryController.deleteProductCategory);
 
 module.exports = router;
