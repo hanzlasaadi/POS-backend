@@ -56,12 +56,12 @@ const orderSchema = mongoose.Schema({
   },
   clientPay: {
     type: Number,
-    validate: {
-      validator: function (val) {
-        return val >= this.totalPrice;
-      },
-      message: 'Discount ({VALUE}) must be lower than the price.',
-    },
+    // validate: {
+    //   validator: function (val) {
+    //     return val >= this.totalPrice;
+    //   },
+    //   message: 'Customer Payment ({VALUE}) must be higher than the price.',
+    // },
     required: [true, 'An order must contain how much the customer payed!'],
   },
   change: Number,
