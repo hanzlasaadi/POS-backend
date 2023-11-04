@@ -11,6 +11,8 @@ exports.checkBody = (req, res, next) => {
   return next();
 };
 
+exports.getAllSales = factory.getAll(Order);
+
 exports.createOrder = factory.createOne(Order);
 
 exports.getAllOrders = factory.getAll(Order);

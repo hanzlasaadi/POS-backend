@@ -6,6 +6,7 @@ exports.getAll = (Model) =>
   catchAsync(async (req, res, next) => {
     const filter = {};
     if (req.params.tourId) filter.tour = req.params.tourId; //hack for geting reviews for one Tour
+    if (req.originalUrl.includes('sale')) filter.status = 'completed';
 
     // Making "API Features" Instance
     const features = new APIFeatures(Model.find(filter), req.query);
@@ -81,15 +82,13 @@ exports.updateOne = (Model) =>
 
 exports.createOne = (Model) =>
   catchAsync(async (req, res, next) => {
-    const newTour = await Model.create(req.body);
+    const newDoc = await Model.create(req.body);
 
-    if (!newTour)
+    if (!newDoc)
       return next(new AppError(401, 'New Document could not be created!!!'));
 
     return res.status(201).json({
       status: 'success',
-      data: {
-        tour: newTour,
-      },
+      data: newDoc,
     });
   });
