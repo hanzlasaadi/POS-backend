@@ -9,12 +9,14 @@ const http = require('http');
 const dotenv = require('dotenv');
 const mongoose = require('mongoose');
 const app = require('./app');
+const db = require('./db');
 
 // Connect config.env file with server
 dotenv.config({ path: `./config.env` });
+// dotenv.config({ path: `./.env` });
 
 // Connect to DataBase
-const DB = process.env.DB_URL.replace('<password>', process.env.DB_PASS);
+const DB = process.env.DB_URL.replace('<password>', db);
 
 mongoose
   .connect(DB)
