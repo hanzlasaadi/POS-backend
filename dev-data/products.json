@@ -4,128 +4,147 @@
     "productsList": [
       {
         "name": "Cheese & Tomato",
-        "image": "cheese & tomato.jpeg",
-        "price": 0,
         "description": "Tomato base and lots of cheese",
-        "stock": 0,
-        "discount": 0
+        "image": "cheese & tomato.jpeg",
+        "price": 10.99,
+        "stock": 50,
+        "discount": 5,
+        "available": true
       },
       {
         "name": "Veggie Delight",
-        "image": "veggie delight.jpeg",
-        "price": 0,
         "description": "Prime dough, artisanal cheese, signature sauce, savory onions, earthy mushrooms, zesty peppers, ripe tomatoes, and sweet corn kernels",
-        "stock": 0,
-        "discount": 0
+        "image": "veggie delight.jpeg",
+        "price": 12.99,
+        "stock": 30,
+        "discount": 8,
+        "available": true
       },
       {
         "name": "Spicy Veggie Delight",
-        "image": "spicy veggie delight.jpeg",
-        "price": 0,
         "description": "Handcrafted dough with top-tier cheese, our secret homemade sauce, onions, mushrooms, green peppers, green chili, jalapenos, and fresh tomatoes.",
-        "stock": 0,
-        "discount": 0
+        "image": "spicy veggie delight.jpeg",
+        "price": 13.99,
+        "stock": 25,
+        "discount": 10,
+        "available": true
       },
       {
         "name": "Countryside Classic",
-        "image": "countryside classic.jpeg",
-        "price": 0,
         "description": "Crafted dough, premium cheese, our homemade tomato sauce, turkey ham, mushrooms, and pineapple.",
-        "stock": 0,
-        "discount": 0
+        "image": "countryside classic.jpeg",
+        "price": 14.99,
+        "stock": 20,
+        "discount": 12,
+        "available": true
       },
       {
         "name": "Pepperoni Perfection",
-        "image": "pepperoni perfection.jpeg",
-        "price": 0,
         "description": "Handcrafted dough, premium cheese, our signature homemade tomato sauce, pepperoni, and extra cheese.",
-        "stock": 0,
-        "discount": 0
+        "image": "pepperoni perfection.jpeg",
+        "price": 15.99,
+        "stock": 18,
+        "discount": 15,
+        "available": true
       },
       {
         "name": "Fiery Delight",
-        "image": "fiery delight.jpeg",
-        "price": 0,
         "description": "Artisanal dough, premium cheese, our secret tomato sauce, spicy beef, onions, and jalapenos.",
-        "stock": 0,
-        "discount": 0
+        "image": "fiery delight.jpeg",
+        "price": 16.99,
+        "stock": 15,
+        "discount": 10,
+        "available": true
       },
       {
         "name": "Lone Star BBQ Feast",
-        "image": "lone star bbq feast.jpeg",
-        "price": 0,
         "description": "Crafted dough, premium cheese, our homemade special tomato sauce, onions, mixed peppers, and tender BBQ chicken.",
-        "stock": 0,
-        "discount": 0
+        "image": "lone star bbq feast.jpeg",
+        "price": 17.99,
+        "stock": 12,
+        "discount": 8,
+        "available": true
       },
       {
         "name": "Peri Peri Marvel",
-        "image": "peri peri marvel.jpeg",
-        "price": 0,
         "description": "Artisanal dough, premium cheese, our special homemade tomato sauce, Peri Peri chicken, onions, mixed peppers, and jalapenos.",
-        "stock": 0,
-        "discount": 0
+        "image": "peri peri marvel.jpeg",
+        "price": 18.99,
+        "stock": 10,
+        "discount": 10,
+        "available": true
       },
       {
         "name": "Tantalizing Chicken Tikka Delight",
-        "image": "tantalizing chicken tikka delight.jpeg",
-        "price": 0,
         "description": "Handcrafted dough, premium cheese, and our homemade special tomato sauce topped with succulent Chicken Tikka.",
-        "stock": 0,
-        "discount": 0
+        "image": "tantalizing chicken tikka delight.jpeg",
+        "price": 19.99,
+        "stock": 8,
+        "discount": 5,
+        "available": true
       },
       {
         "name": "Tandoori Spice Sensation",
-        "image": "tandoori spice sensation.jpeg",
-        "price": 0,
         "description": "Handcrafted dough, premium cheese, our special homemade tomato sauce, Chicken Tikka, onions, green peppers, and jalapenos for a fiery kick.",
-        "stock": 0,
-        "discount": 0
+        "image": "tandoori spice sensation.jpeg",
+        "price": 20.99,
+        "stock": 5,
+        "discount": 8,
+        "available": true
       },
       {
         "name": "Seafood Special",
-        "image": "seafood special.jpeg",
-        "price": 0,
         "description": "Artisanal dough, premium cheese, our special homemade tomato sauce, prawns, tuna, and sweet corn for a seafood delight.",
-        "stock": 0,
-        "discount": 0
+        "image": "seafood special.jpeg",
+        "price": 21.99,
+        "stock": 3,
+        "discount": 12,
+        "available": true
       },
       {
         "name": "Signature Treats Delight",
-        "image": "signature treats delight.jpeg",
-        "price": 0,
         "description": "Crafted dough, premium cheese, our special homemade tomato sauce, Peri Peri chicken, onions, sweet corn, mushrooms, and a hint of green chili for a spicy twist.",
-        "stock": 0,
-        "discount": 0
+        "image": "signature treats delight.jpeg",
+        "price": 22.99,
+        "stock": 2,
+        "discount": 15,
+        "available": true
       },
       {
         "name": "Ultimate Meat Feast",
-        "image": "ultimate meat feast.jpeg",
-        "price": 0,
         "description": "Handcrafted dough, premium cheese, our special homemade tomato sauce, pepperoni, salami, meatballs, and turkey ham for a hearty meat lover's delight.",
-        "stock": 0,
-        "discount": 0
+        "image": "ultimate meat feast.jpeg",
+        "price": 23.99,
+        "stock": 1,
+        "discount": 20,
+        "available": true
       },
       {
         "name": "Fifty Fifty Extravaganza",
-        "image": "fifty fifty extravaganza.jpeg",
-        "price": 0,
         "description": "Choose any two pizzas from the above list and we will create half & half.",
-        "stock": 0,
-        "discount": 0
+        "image": "fifty fifty extravaganza.jpeg",
+        "price": 24.99,
+        "stock": 2,
+        "discount": 15,
+        "available": true,
+        "custom": true,
+        "customType": "fifty fifty extravaganza"
       },
       {
         "name": "Personalized Pizza",
-        "image": "personalized pizza.jpeg",
-        "price": 0,
         "description": "Choose any 4 toppings: Tomato, Mushroom, Pepper, Green Chilli, Olives, Onion, Pineapple, Sweet Corn, Jalapeno, Extra Cheese, Pepperoni, Spicy Chicken Tikka, Peri Peri Chicken, or BBQ Chicken.",
-        "stock": 0,
-        "discount": 0
+        "image": "personalized pizza.jpeg",
+        "price": 25.99,
+        "stock": 3,
+        "discount": 10,
+        "available": true,
+        "custom": true,
+        "customType": "personalized"
       }
     ],
     "available": true,
     "image": "subcategory pizzas.jpeg",
-    "productCategory": "653fcb047deba0d31c2972b1"
+    "productCategory": "Pizzas"
   },
   {
     "name": "Wraps (Signature)",
@@ -237,7 +256,7 @@
     ],
     "available": true,
     "image": "subcategory wraps.jpeg",
-    "productCategory": "653fcb047deba0d31c2972c8"
+    "productCategory": "Wraps (Signature)"
   },
   {
     "name": "Burgers",
@@ -309,7 +328,7 @@
     ],
     "available": true,
     "image": "subcategory burgers.jpeg",
-    "productCategory": "653fcb047deba0d31c2972e5"
+    "productCategory": "Burgers"
   },
   {
     "name": "Fruit Flavour",
@@ -429,7 +448,7 @@
     ],
     "available": true,
     "image": "subcategory fruit flavour.jpeg",
-    "productCategory": "653fcb047deba0d31c2972fe"
+    "productCategory": "Bubble Tea"
   },
   {
     "name": "Milk Flavour",
@@ -493,7 +512,7 @@
     ],
     "available": true,
     "image": "subcategory milk flavour.jpeg",
-    "productCategory": "653fcb047deba0d31c2972fe"
+    "productCategory": "Bubble Tea"
   },
   {
     "name": "Mocktails",
@@ -541,7 +560,7 @@
     ],
     "available": true,
     "image": "subcategory mocktails.jpeg",
-    "productCategory": "653fcb047deba0d31c2972fe"
+    "productCategory": "Bubble Tea"
   },
   {
     "name": "Waffles",
@@ -681,137 +700,27 @@
         "price": 0,
         "stock": 0,
         "discount": 0
+      },
+      {
+        "name": "Make Your Own Waffle",
+        "description": "Choose toppings, flavours, and one ice cream from the following list to create your own waffle.",
+        "image": "make your own waffle.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0,
+        "custom": true,
+        "customType": "make your own waffle"
       }
     ],
     "available": true,
     "image": "subcategory waffles.jpeg",
-    "productCategory": "653fcb047deba0d31c29733d"
-  },
-  {
-    "name": "Milkshakes",
-    "productsList": [
-      {
-        "name": "Ferrero Heaven Milkshake",
-        "description": "Ferrero Rocher, Fresh Cream with Chocolate Sauce and Sprinkles",
-        "image": "ferrero heaven milkshake.jpeg",
-        "price": 0,
-        "stock": 0,
-        "discount": 0
-      },
-      {
-        "name": "Kinder Sensation Milkshake",
-        "description": "Milk or White Kinder Bueno Chocolate, Fresh Cream topped with Chocolate Sauce and Sprinkles",
-        "image": "kinder sensation milkshake.jpeg",
-        "price": 0,
-        "stock": 0,
-        "discount": 0
-      },
-      {
-        "name": "Malsters Galore Milkshake",
-        "description": "Malsters Milk Chocolate, Fresh Cream, Chocolate Sauce topped with Sprinkles",
-        "image": "malsters galore milkshake.jpeg",
-        "price": 0,
-        "stock": 0,
-        "discount": 0
-      },
-      {
-        "name": "Aero Wave Milkshake",
-        "description": "Aero Mint Chocolate, Fresh Cream, Chocolate Sauce topped with Crushed Oreos",
-        "image": "aero wave milkshake.jpeg",
-        "price": 0,
-        "stock": 0,
-        "discount": 0
-      },
-      {
-        "name": "Snickers Surprise Milkshake",
-        "description": "Snickers Chocolate, Fresh Cream, Chocolate Sauce and Sprinkles",
-        "image": "snickers surprise milkshake.jpeg",
-        "price": 0,
-        "stock": 0,
-        "discount": 0
-      },
-      {
-        "name": "Luxurious Lion Milkshake",
-        "description": "Lindor Milk Chocolate, Fresh Cream topped with Chocolate Sauce and Sprinkles",
-        "image": "luxurious lion milkshake.jpeg",
-        "price": 0,
-        "stock": 0,
-        "discount": 0
-      },
-      {
-        "name": "Lotus Biscoff Milkshake",
-        "description": "Lotus Biscoff, Chocolate Sauce, Fresh Cream topped with crushed Biscoff Biscuit",
-        "image": "lotus biscoff milkshake.jpeg",
-        "price": 0,
-        "stock": 0,
-        "discount": 0
-      },
-      {
-        "name": "Blue Millions Milkshake",
-        "description": "White Chocolate, Fresh Cream Blue Millions topped with Bubble Gum Sauce",
-        "image": "blue millions milkshake.jpeg",
-        "price": 0,
-        "stock": 0,
-        "discount": 0
-      },
-      {
-        "name": "Caramel Bliss Milkshake",
-        "description": "Mixed With Salted Caramel Crispy Balls, Fresh Cream and Salted Caramel Sauce",
-        "image": "caramel bliss milkshake.jpeg",
-        "price": 0,
-        "stock": 0,
-        "discount": 0
-      },
-      {
-        "name": "Bananalicious Island Milkshake",
-        "description": "Fresh Banana with Nutella, Fresh Cream topped with Chocolate Sauce",
-        "image": "bananalicious island milkshake.jpeg",
-        "price": 0,
-        "stock": 0,
-        "discount": 0
-      },
-      {
-        "name": "Cookie Delight Milkshake",
-        "description": "Cookie Dough, Fresh Cream and Chocolate Sauce",
-        "image": "cookie delight milkshake.jpeg",
-        "price": 0,
-        "stock": 0,
-        "discount": 0
-      },
-      {
-        "name": "Strawberry Dreamland Milkshake",
-        "description": "Fresh Strawberries, White Chocolate, Fresh Cream topped with Strawberry Sauce",
-        "image": "strawberry dreamland milkshake.jpeg",
-        "price": 0,
-        "stock": 0,
-        "discount": 0
-      },
-      {
-        "name": "Oreo Blast Shake Milkshake",
-        "description": "Chocolate Oreos, Fresh Cream, Chocolate Sauce topped with Crushed Oreos",
-        "image": "oreo blast shake milkshake.jpeg",
-        "price": 0,
-        "stock": 0,
-        "discount": 0
-      },
-      {
-        "name": "Create Your Own Milk Shakes",
-        "description": "Choose your own ingredients and create a customized milkshake!",
-        "image": "create your own milkshakes.jpeg",
-        "price": 0,
-        "stock": 0,
-        "discount": 0
-      }
-    ],
-    "available": true,
-    "image": "subcategory milkshakes.jpeg",
-    "productCategory": "653fcb047deba0d31c29731c"
+    "productCategory": "Waffles"
   },
   {
     "name": "Sundaes",
     "productsList": [
       {
-        "name": "Fruit Treat",
+        "name": "Fruit",
         "description": "Strawberry, Banoffee and Mango or Fruit Salad Ice Cream Served with Fresh Strawberries Topped with Luxury Strawberry and Raspberry Sauce, Finished with Whipped Cream, Sprinkles & Wafer",
         "image": "fruit treat sundae.jpeg",
         "price": 0,
@@ -827,7 +736,7 @@
         "discount": 0
       },
       {
-        "name": "Toffee Treat",
+        "name": "Toffee",
         "description": "Caramel, Milky Bar and Banoffee Ice Cream, Topped with Luxury Toffee and Caramel Sauce, Fudge Pieces, Finished with Whipped Cream, Sprinkles and Wafer",
         "image": "toffee treat sundae.jpeg",
         "price": 0,
@@ -843,7 +752,7 @@
         "discount": 0
       },
       {
-        "name": "Surprise Treat",
+        "name": "Surprise",
         "description": "Oreo, Triple Chocolate and Ferrero Rocher Ice Cream Topped with Oreo Pieces, Oreo Biscuit, Ferrero Rocher, Served with Nutella & White Chocolate Sauce and Wafer",
         "image": "surprise treat sundae.jpeg",
         "price": 0,
@@ -851,7 +760,7 @@
         "discount": 0
       },
       {
-        "name": "Bubblicious Treat",
+        "name": "Bubblicious",
         "description": "Bubblegum, Strawberry and Million Ice Cream, Topped with Whipped Cream Finished with Luxury Bubblegum and Strawberry Sauce, Sprinkles, Wafer and Mini Marshmallow",
         "image": "bubblicious treat sundae.jpeg",
         "price": 0,
@@ -859,7 +768,7 @@
         "discount": 0
       },
       {
-        "name": "Kinder Treat",
+        "name": "Kinder Sensation",
         "description": "2 X Kinder Bueno and Triple Chocolate Ice Cream Topped with Kinder Bueno Chocolate and Sprinkles, Served with Whipped Cream, Belgian Milk Chocolate Sauce and White Chocolate Sauce",
         "image": "kinder treat sundae.jpeg",
         "price": 0,
@@ -869,7 +778,7 @@
     ],
     "available": true,
     "image": "subcategory sundaes.jpeg",
-    "productCategory": "653fcb047deba0d31c297334"
+    "productCategory": "Sundaes"
   },
   {
     "name": "Cookie Dough",
@@ -909,26 +818,20 @@
     ],
     "available": true,
     "image": "subcategory cookie dough.jpeg",
-    "productCategory": "653fcb047deba0d31c297335"
+    "productCategory": "Cookie Dough"
   },
   {
     "name": "Ice Creams",
     "productsList": [
-      {
-        "name": "Almond Kulfi (8oz)",
-        "description": "8oz of Almond Kulfi flavored ice cream.",
-        "image": "almond kulfi ice cream.jpeg",
-        "price": 0,
-        "stock": 0,
-        "discount": 0
-      },
       {
         "name": "Billions (8oz)",
         "description": "8oz of Billions flavored ice cream.",
         "image": "billions ice cream.jpeg",
         "price": 0,
         "stock": 0,
-        "discount": 0
+        "discount": 0,
+        "custom": true,
+        "customType": "ice creams"
       },
       {
         "name": "Bubblegum (8oz)",
@@ -936,7 +839,9 @@
         "image": "bubblegum ice cream.jpeg",
         "price": 0,
         "stock": 0,
-        "discount": 0
+        "discount": 0,
+        "custom": true,
+        "customType": "ice creams"
       },
       {
         "name": "Butterscotch (8oz)",
@@ -944,7 +849,9 @@
         "image": "butterscotch ice cream.jpeg",
         "price": 0,
         "stock": 0,
-        "discount": 0
+        "discount": 0,
+        "custom": true,
+        "customType": "ice creams"
       },
       {
         "name": "Caramel Twist (8oz)",
@@ -952,7 +859,9 @@
         "image": "caramel twist ice cream.jpeg",
         "price": 0,
         "stock": 0,
-        "discount": 0
+        "discount": 0,
+        "custom": true,
+        "customType": "ice creams"
       },
       {
         "name": "Caribbean Coconut (8oz)",
@@ -960,7 +869,9 @@
         "image": "caribbean coconut ice cream.jpeg",
         "price": 0,
         "stock": 0,
-        "discount": 0
+        "discount": 0,
+        "custom": true,
+        "customType": "ice creams"
       },
       {
         "name": "Chocolate Brownie (8oz)",
@@ -968,31 +879,9 @@
         "image": "chocolate brownie ice cream.jpeg",
         "price": 0,
         "stock": 0,
-        "discount": 0
-      },
-      {
-        "name": "Double White Chocolate (8oz)",
-        "description": "8oz of Double White Chocolate flavored ice cream.",
-        "image": "double white chocolate ice cream.jpeg",
-        "price": 0,
-        "stock": 0,
-        "discount": 0
-      },
-      {
-        "name": "Hazelnut (8oz)",
-        "description": "8oz of Hazelnut flavored ice cream.",
-        "image": "hazelnut ice cream.jpeg",
-        "price": 0,
-        "stock": 0,
-        "discount": 0
-      },
-      {
-        "name": "I'm Jammin (8oz)",
-        "description": "8oz of I'm Jammin flavored ice cream.",
-        "image": "im jammin ice cream.jpeg",
-        "price": 0,
-        "stock": 0,
-        "discount": 0
+        "discount": 0,
+        "custom": true,
+        "customType": "ice creams"
       },
       {
         "name": "Mango (8oz)",
@@ -1000,7 +889,9 @@
         "image": "mango ice cream.jpeg",
         "price": 0,
         "stock": 0,
-        "discount": 0
+        "discount": 0,
+        "custom": true,
+        "customType": "ice creams"
       },
       {
         "name": "Mint Chocolate (8oz)",
@@ -1008,7 +899,9 @@
         "image": "mint chocolate ice cream.jpeg",
         "price": 0,
         "stock": 0,
-        "discount": 0
+        "discount": 0,
+        "custom": true,
+        "customType": "ice creams"
       },
       {
         "name": "Nutty Donatella (8oz)",
@@ -1016,7 +909,9 @@
         "image": "nutty donatella ice cream.jpeg",
         "price": 0,
         "stock": 0,
-        "discount": 0
+        "discount": 0,
+        "custom": true,
+        "customType": "ice creams"
       },
       {
         "name": "Oreo Blast (8oz)",
@@ -1024,7 +919,9 @@
         "image": "oreo blast ice cream.jpeg",
         "price": 0,
         "stock": 0,
-        "discount": 0
+        "discount": 0,
+        "custom": true,
+        "customType": "ice creams"
       },
       {
         "name": "Paradise Bounty (8oz)",
@@ -1032,7 +929,9 @@
         "image": "paradise bounty ice cream.jpeg",
         "price": 0,
         "stock": 0,
-        "discount": 0
+        "discount": 0,
+        "custom": true,
+        "customType": "ice creams"
       },
       {
         "name": "Raspberry Ripple (8oz)",
@@ -1040,7 +939,9 @@
         "image": "raspberry ripple ice cream.jpeg",
         "price": 0,
         "stock": 0,
-        "discount": 0
+        "discount": 0,
+        "custom": true,
+        "customType": "ice creams"
       },
       {
         "name": "Sensual Strawberry (8oz)",
@@ -1048,7 +949,9 @@
         "image": "sensual strawberry ice cream.jpeg",
         "price": 0,
         "stock": 0,
-        "discount": 0
+        "discount": 0,
+        "custom": true,
+        "customType": "ice creams"
       },
       {
         "name": "Taste the Rainbow (8oz)",
@@ -1056,7 +959,9 @@
         "image": "taste the rainbow ice cream.jpeg",
         "price": 0,
         "stock": 0,
-        "discount": 0
+        "discount": 0,
+        "custom": true,
+        "customType": "ice creams"
       },
       {
         "name": "Chocolate with Maltesers (8oz)",
@@ -1064,12 +969,14 @@
         "image": "chocolate with maltesers ice cream.jpeg",
         "price": 0,
         "stock": 0,
-        "discount": 0
+        "discount": 0,
+        "custom": true,
+        "customType": "ice creams"
       }
     ],
     "available": true,
     "image": "subcategory ice creams.jpeg",
-    "productCategory": "653fcb047deba0d31c297336"
+    "productCategory": "Ice Cream / Gelato"
   },
   {
     "name": "Classic Gelato",
@@ -1091,14 +998,6 @@
         "discount": 0
       },
       {
-        "name": "STRAWBERRIES AND CREAM GELATO",
-        "description": "Classic gelato with the sweet taste of strawberries and cream.",
-        "image": "strawberries and cream gelato.jpeg",
-        "price": 0,
-        "stock": 0,
-        "discount": 0
-      },
-      {
         "name": "LOTUS BISCOFF GELATO",
         "description": "Classic gelato with the delightful Lotus Biscoff cookie flavor.",
         "image": "lotus biscoff gelato.jpeg",
@@ -1113,59 +1012,11 @@
         "price": 0,
         "stock": 0,
         "discount": 0
-      },
-      {
-        "name": "MINT AERO GELATO",
-        "description": "Classic gelato with the refreshing taste of Mint Aero.",
-        "image": "mint aero gelato.jpeg",
-        "price": 0,
-        "stock": 0,
-        "discount": 0
-      },
-      {
-        "name": "SALTED CARAMEL GELATO",
-        "description": "Classic gelato with a perfect balance of salted caramel sweetness.",
-        "image": "salted caramel gelato.jpeg",
-        "price": 0,
-        "stock": 0,
-        "discount": 0
-      },
-      {
-        "name": "CIOCCOLATO GELATO",
-        "description": "Classic gelato with a classic chocolate flavor.",
-        "image": "cioccolato gelato.jpeg",
-        "price": 0,
-        "stock": 0,
-        "discount": 0
-      },
-      {
-        "name": "CINNAMON GELATO",
-        "description": "Classic gelato with a touch of aromatic cinnamon.",
-        "image": "cinnamon gelato.jpeg",
-        "price": 0,
-        "stock": 0,
-        "discount": 0
-      },
-      {
-        "name": "PARADISE BOUNTY GELATO",
-        "description": "Classic gelato with a taste of paradise, bounty style.",
-        "image": "paradise bounty gelato.jpeg",
-        "price": 0,
-        "stock": 0,
-        "discount": 0
-      },
-      {
-        "name": "HAZELNUT GELATO",
-        "description": "Classic gelato with the nutty goodness of hazelnuts.",
-        "image": "hazelnut gelato.jpeg",
-        "price": 0,
-        "stock": 0,
-        "discount": 0
       }
     ],
     "available": true,
     "image": "subcategory classic gelato.jpeg",
-    "productCategory": "653fcb047deba0d31c297337"
+    "productCategory": "Ice Cream / Gelato"
   },
   {
     "name": "Kids Gelato",
@@ -1205,7 +1056,7 @@
     ],
     "available": true,
     "image": "subcategory kids gelato.jpeg",
-    "productCategory": "653fcb047deba0d31c297338"
+    "productCategory": "Ice Cream / Gelato"
   },
   {
     "name": "Savers Menu / Sides",
@@ -1333,7 +1184,7 @@
     ],
     "available": true,
     "image": "subcategory savers menu / sides.jpeg",
-    "productCategory": "653fcb047deba0d31c297339"
+    "productCategory": "Savers Menu / Sides"
   },
   {
     "name": "Drinks",
@@ -1453,7 +1304,7 @@
     ],
     "available": true,
     "image": "subcategory drinks.jpeg",
-    "productCategory": "653fcb047deba0d31c29733a"
+    "productCategory": "Drinks"
   },
   {
     "name": "Crisps",
@@ -1525,7 +1376,7 @@
     ],
     "available": true,
     "image": "subcategory crisps.jpeg",
-    "productCategory": "653fcb047deba0d31c29733b"
+    "productCategory": "Crisps"
   },
   {
     "name": "Sauce Dips (2 oz)",
@@ -1597,6 +1448,94 @@
     ],
     "available": true,
     "image": "subcategory sauce dips.jpeg",
-    "productCategory": "653fcb047deba0d31c29733c"
+    "productCategory": "Sauce Dips (2 oz)"
+  },
+  {
+    "name": "Doughnuts",
+    "productsList": [
+      {
+        "name": "Plain Doughnut",
+        "description": "",
+        "image": "plain doughnut.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Chocolate Flavour Doughnut",
+        "description": "",
+        "image": "chocolate flavour doughnut.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Suger Ice Doughnut",
+        "description": "",
+        "image": "suger ice doughnut.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Oreo Sensation Doughnut",
+        "description": "",
+        "image": "oreo sensation doughnut.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Marshmallow Flavour Doughnut",
+        "description": "",
+        "image": "marshmallow flavour doughnut.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Sweet Toffee Doughnut",
+        "description": "",
+        "image": "sweet toffee doughnut.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Caramel Craze Doughnut",
+        "description": "",
+        "image": "caramel craze doughnut.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Peanut Butter Doughnut",
+        "description": "",
+        "image": "peanut butter doughnut.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "Naughty Nutella Doughnut",
+        "description": "",
+        "image": "naughty nutella doughnut.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      },
+      {
+        "name": "White Ice Ring Doughnut",
+        "description": "",
+        "image": "white ice ring doughnut.jpeg",
+        "price": 0,
+        "stock": 0,
+        "discount": 0
+      }
+    ],
+    "available": true,
+    "image": "subcategory doughnuts.jpeg",
+    "productCategory": "Doughnuts"
   }
 ]

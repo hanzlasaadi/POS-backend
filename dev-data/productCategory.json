@@ -1,5 +1,6 @@
 [
   {
+    "priority": 1,
     "name": "Pizzas",
     "available": true,
     "typeOfFood": "solid",
@@ -21,6 +22,100 @@
             "type": "14",
             "image": "14inch.jpeg",
             "price": 10.99
+          }
+        ]
+      },
+      {
+        "stepName": "Pizza Flavour (Any 2)",
+        "custom": true,
+        "customType": "fifty fifty extravaganza",
+        "options": [
+          {
+            "type": "Meat Pizza (50%)",
+            "image": "meat pizza.jpeg",
+            "price": 0.0
+          },
+          {
+            "type": "Veggie Pizza (50%)",
+            "image": "veggie pizza.jpeg",
+            "price": 0.0
+          }
+        ]
+      },
+      {
+        "stepName": "Choose Custom Toppings (Any 4)",
+        "custom": true,
+        "customType": "personalized",
+        "options": [
+          {
+            "type": "Tomato",
+            "image": "tomato topping.jpeg",
+            "price": 0.0
+          },
+          {
+            "type": "Mushroom",
+            "image": "mushroom topping.jpeg",
+            "price": 0.0
+          },
+          {
+            "type": "Pepper",
+            "image": "pepper topping.jpeg",
+            "price": 0.0
+          },
+          {
+            "type": "Green Chilli",
+            "image": "green chilli topping.jpeg",
+            "price": 0.0
+          },
+          {
+            "type": "Olives",
+            "image": "olives topping.jpeg",
+            "price": 0.0
+          },
+          {
+            "type": "Onion",
+            "image": "onion topping.jpeg",
+            "price": 0.0
+          },
+          {
+            "type": "Pineapple",
+            "image": "pineapple topping.jpeg",
+            "price": 0.0
+          },
+          {
+            "type": "Sweet corn",
+            "image": "sweet corn topping.jpeg",
+            "price": 0.0
+          },
+          {
+            "type": "Jalapeno",
+            "image": "jalapeno topping.jpeg",
+            "price": 0.0
+          },
+          {
+            "type": "Extra Cheese",
+            "image": "extra cheese topping.jpeg",
+            "price": 0.0
+          },
+          {
+            "type": "Pepperoni",
+            "image": "pepperoni topping.jpeg",
+            "price": 0.0
+          },
+          {
+            "type": "Spicy Chicken Tikka",
+            "image": "spicy chicken tikka topping.jpeg",
+            "price": 0.0
+          },
+          {
+            "type": "Peri Peri Chicken",
+            "image": "peri peri chicken topping.jpeg",
+            "price": 0.0
+          },
+          {
+            "type": "BBQ Chicken",
+            "image": "bbq chicken topping.jpeg",
+            "price": 0.0
           }
         ]
       },
@@ -70,12 +165,12 @@
         ]
       },
       {
-        "stepName": "Sauce (any 2)",
+        "stepName": "Sauce (Any 2)",
         "options": [
           {
             "type": "Mayo",
             "image": "mayo.jpeg",
-            "price": 2.99
+            "price": 0
           },
           {
             "type": "Ketchup",
@@ -117,12 +212,13 @@
     ]
   },
   {
+    "priority": 2,
     "name": "Wraps (Signature)",
     "available": true,
     "typeOfFood": "solid",
     "stepsToChoose": [
       {
-        "stepName": "Choose Tortilla (Any One)",
+        "stepName": "Choose Tortilla (Any 1)",
         "options": [
           {
             "type": "Plain Flour",
@@ -142,7 +238,7 @@
         ]
       },
       {
-        "stepName": "Would you cheese in it?",
+        "stepName": "Would you like cheese in it?",
         "options": [
           {
             "type": "Yes",
@@ -157,7 +253,7 @@
         ]
       },
       {
-        "stepName": "Would you like meat and Wrap Toaster?",
+        "stepName": "Would you like Meat and Wrap Toaster?",
         "options": [
           {
             "type": "Yes",
@@ -264,6 +360,7 @@
     ]
   },
   {
+    "priority": 3,
     "name": "Burgers",
     "available": true,
     "typeOfFood": "solid",
@@ -391,9 +488,10 @@
     ]
   },
   {
+    "priority": 4,
     "name": "Bubble Tea",
     "available": true,
-    "typeOfFood": "solid",
+    "typeOfFood": "beverage",
     "stepsToChoose": [
       {
         "stepName": "Choose Size (Any 1)",
@@ -543,12 +641,252 @@
     ]
   },
   {
-    "name": "Milkshakes",
+    "priority": 5,
+    "name": "Waffles",
     "available": true,
-    "typeOfFood": "solid",
+    "typeOfFood": "dessert",
     "stepsToChoose": [
       {
-        "stepName": "Choose Size (Any one)",
+        "custom": true,
+        "customType": "make your own waffle",
+        "stepName": "Choose Toppings (Any 2)",
+        "options": [
+          {
+            "type": "Bananas",
+            "image": "bananas.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Strawberries",
+            "image": "strawberries.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Lotus Biscoff",
+            "image": "lotus biscoff.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Oreo Bits",
+            "image": "oreo bits.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Brownie Pieces",
+            "image": "brownie pieces.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Mixed Nutt",
+            "image": "mixed nutt.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Marshmallows",
+            "image": "marshmallows.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Fudge Pieces",
+            "image": "fudge pieces.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Ferrero Rocher",
+            "image": "ferrero rocher.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Maltesers",
+            "image": "maltesers.jpeg",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "custom": true,
+        "customType": "make your own waffle",
+        "stepName": "Choose Sauces (Any 2)",
+        "options": [
+          {
+            "type": "Belgian Chocolate",
+            "image": "belgian chocolate.jpeg",
+            "price": 0
+          },
+          {
+            "type": "White Chocolate",
+            "image": "white chocolate.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Strawberry",
+            "image": "strawberry.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Raspberry",
+            "image": "raspberry.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Caramel",
+            "image": "caramel.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Toffee",
+            "image": "toffee.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Mint",
+            "image": "mint.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Nutella",
+            "image": "nutella.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Bubblegum",
+            "image": "bubblegum.jpeg",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "custom": true,
+        "customType": "make your own waffle",
+        "stepName": "Choose Ice cream (Any 1)",
+        "options": [
+          {
+            "type": "Billions (8oz)",
+            "image": "waffle option ice cream.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Bubblegum (8oz)",
+            "image": "waffle option ice cream.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Butterscotch (8oz)",
+            "image": "waffle option ice cream.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Caramel Twist (8oz)",
+            "image": "waffle option ice cream.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Caribean Coconut (8oz)",
+            "image": "waffle option ice cream.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Chocolate Brownie (8oz)",
+            "image": "waffle option ice cream.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Mango (8oz)",
+            "image": "waffle option ice cream.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Mint Chocolate (8oz)",
+            "image": "waffle option ice cream.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Nutty Donatella (8oz)",
+            "image": "waffle option ice cream.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Oreo Blast (8oz)",
+            "image": "waffle option ice cream.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Paradise Bounty (8oz)",
+            "image": "waffle option ice cream.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Resberry Ripple (8oz)",
+            "image": "waffle option ice cream.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Sansual Strawberry (8oz)",
+            "image": "waffle option ice cream.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Taste the Rainbow (8oz)",
+            "image": "waffle option ice cream.jpeg",
+            "price": 0
+          },
+          {
+            "type": "Chocolate with Malteasers (8oz)",
+            "image": "waffle option ice cream.jpeg",
+            "price": 0
+          },
+          {
+            "type": "ROCHER GELATO",
+            "image": "waffle option ice cream.jpeg",
+            "price": 0
+          },
+          {
+            "type": "BUENO GELATO",
+            "image": "waffle option ice cream.jpeg",
+            "price": 0
+          },
+          {
+            "type": "LOTUS BISCOFF GELATO",
+            "image": "waffle option ice cream.jpeg",
+            "price": 0
+          },
+          {
+            "type": "CHOCOLATE FUDGE BROWNIE GELATO",
+            "image": "waffle option ice cream.jpeg",
+            "price": 0
+          },
+          {
+            "type": "UNICORN GELATO",
+            "image": "waffle option ice cream.jpeg",
+            "price": 0
+          },
+          {
+            "type": "BUBBLEGUM GELATO",
+            "image": "waffle option ice cream.jpeg",
+            "price": 0
+          },
+          {
+            "type": "AMERICAN BIRTHDAY CAKE GELATO",
+            "image": "waffle option ice cream.jpeg",
+            "price": 0
+          },
+          {
+            "type": "COTTON CANDY GELATO",
+            "image": "waffle option ice cream.jpeg",
+            "price": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "priority": 6,
+    "name": "Milkshakes",
+    "available": true,
+    "typeOfFood": "beverage",
+    "stepsToChoose": [
+      {
+        "stepName": "Choose Size (Any 1)",
         "options": [
           {
             "type": "Regular 12(oz)",
@@ -563,101 +901,103 @@
         ]
       },
       {
-        "stepName": "Choose Ice cream (Any Two)",
+        "custom": true,
+        "customType": "ice cream milkshake",
+        "stepName": "Choose Ice cream (Any 2)",
         "options": [
           {
             "type": "Almond Kulfi",
-            "image": "almond kulfi.jpeg",
+            "image": "almond kulfi milkshake.jpeg",
             "price": 0
           },
           {
             "type": "Billions",
-            "image": "billions.jpeg",
+            "image": "billions milkshake.jpeg",
             "price": 0
           },
           {
             "type": "Bubblegum",
-            "image": "bubblegum.jpeg",
+            "image": "bubblegum milkshake.jpeg",
             "price": 0
           },
           {
             "type": "Butterscotch",
-            "image": "butterscotch.jpeg",
+            "image": "butterscotch milkshake.jpeg",
             "price": 0
           },
           {
             "type": "Caramel Twist",
-            "image": "caramel twist.jpeg",
+            "image": "caramel twist milkshake.jpeg",
             "price": 0
           },
           {
             "type": "Caribbean Coconut",
-            "image": "caribbean coconut.jpeg",
+            "image": "caribbean coconut milkshake.jpeg",
             "price": 0
           },
           {
             "type": "Chocolate Brownie",
-            "image": "chocolate brownie.jpeg",
+            "image": "chocolate brownie milkshake.jpeg",
             "price": 0
           },
           {
             "type": "Double White Chocolate",
-            "image": "double white chocolate.jpeg",
+            "image": "double white chocolate milkshake.jpeg",
             "price": 0
           },
           {
             "type": "Hazelnut",
-            "image": "hazelnut.jpeg",
+            "image": "hazelnut milkshake.jpeg",
             "price": 0
           },
           {
             "type": "I'M Jammin",
-            "image": "i'm jammin.jpeg",
+            "image": "i'm jammin milkshake.jpeg",
             "price": 0
           },
           {
             "type": "Mango",
-            "image": "mango icecream.jpeg",
+            "image": "mango icecream milkshake.jpeg",
             "price": 0
           },
           {
             "type": "Mint Chocolate",
-            "image": "mint chocolate.jpeg",
+            "image": "mint chocolate milkshake.jpeg",
             "price": 0
           },
           {
             "type": "Nutty Donatella",
-            "image": "nutty donatella.jpeg",
+            "image": "nutty donatella milkshake.jpeg",
             "price": 0
           },
           {
             "type": "Oreo Blast",
-            "image": "oreo blast.jpeg",
+            "image": "oreo blast milkshake.jpeg",
             "price": 0
           },
           {
             "type": "Paradise Bounty",
-            "image": "paradise bounty.jpeg",
+            "image": "paradise bounty milkshake.jpeg",
             "price": 0
           },
           {
             "type": "Raspberry Ripple",
-            "image": "raspberry ripple.jpeg",
+            "image": "raspberry ripple milkshake.jpeg",
             "price": 0
           },
           {
             "type": "Sensual Strawberry",
-            "image": "sensual strawberry.jpeg",
+            "image": "sensual strawberry milkshake.jpeg",
             "price": 0
           },
           {
             "type": "Taste the Rainbow",
-            "image": "taste the rainbow.jpeg",
+            "image": "taste the rainbow milkshake.jpeg",
             "price": 0
           },
           {
             "type": "Chocolate with Maltesers",
-            "image": "chocolate with maltesers.jpeg",
+            "image": "chocolate with maltesers milkshake.jpeg",
             "price": 0
           }
         ]
@@ -665,63 +1005,82 @@
     ]
   },
   {
+    "priority": 7,
     "name": "Sundaes",
     "available": true,
-    "typeOfFood": "beverage",
+    "typeOfFood": "dessert",
     "stepsToChoose": []
   },
   {
+    "priority": 8,
     "name": "Cookie Dough",
     "available": true,
-    "typeOfFood": "solid",
+    "typeOfFood": "dessert",
     "stepsToChoose": []
   },
   {
-    "name": "Ice Creams",
+    "priority": 9,
+    "name": "Ice Cream / Gelato",
     "available": true,
-    "typeOfFood": "solid",
-    "stepsToChoose": []
+    "typeOfFood": "dessert",
+    "stepsToChoose": [
+      {
+        "custom": true,
+        "customType": "ice creams",
+        "stepName": "Choose Size (Any 1)",
+        "options": [
+          {
+            "type": "Single Scoop",
+            "image": "single scoop.jpeg",
+            "price": 4.99
+          },
+          {
+            "type": "Double Scoop",
+            "image": "double scoop.jpeg",
+            "price": 7.99
+          },
+          {
+            "type": "Triple Scoop",
+            "image": "triple scoop.jpeg",
+            "price": 9.99
+          }
+        ]
+      }
+    ]
   },
   {
-    "name": "Classic Gelato",
-    "available": true,
-    "typeOfFood": "solid",
-    "stepsToChoose": []
-  },
-  {
-    "name": "Kids Gelato",
-    "available": true,
-    "typeOfFood": "solid",
-    "stepsToChoose": []
-  },
-  {
+    "priority": 10,
     "name": "Savers Menu / Sides",
     "available": true,
     "typeOfFood": "mix",
     "stepsToChoose": []
   },
   {
+    "priority": 11,
     "name": "Drinks",
     "available": true,
     "typeOfFood": "beverage",
     "stepsToChoose": []
   },
   {
+    "priority": 12,
     "name": "Crisps",
     "available": true,
     "typeOfFood": "solid",
     "stepsToChoose": []
   },
   {
+    "priority": 13,
     "name": "Sauce Dips (2 oz)",
     "available": true,
     "typeOfFood": "solid",
     "stepsToChoose": []
   },
   {
-    "name": "Waffles",
+    "priority": 14,
+    "name": "Doughnuts",
     "available": true,
-    "typeOfFood": "solid",
+    "typeOfFood": "dessert",
     "stepsToChoose": []
   }
 ]

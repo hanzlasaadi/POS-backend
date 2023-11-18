@@ -1,10 +1,13 @@
+/* eslint-disable node/no-unpublished-require */
+/* eslint-disable no-unused-vars */
 /* eslint-disable import/no-dynamic-require */
 /* eslint-disable import/no-extraneous-dependencies */
 const fs = require('fs');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
+const db = require('../db');
 
-// const ProductCategory = require(`${__dirname}/../models/productCategoryModel`);
+const ProductCategory = require(`${__dirname}/../models/productCategoryModel`);
 const Product = require(`${__dirname}/../models/productModel`);
 
 dotenv.config({ path: `${__dirname}/../config.env` });
@@ -15,9 +18,12 @@ console.log('Fuck yes: ', arg);
 // const allData = JSON.parse(
 //   fs.readFileSync(`${__dirname}/productCategory.json`),
 // );
-const allData = JSON.parse(fs.readFileSync(`${__dirname}/products.json`));
+const productData = JSON.parse(fs.readFileSync(`${__dirname}/products.json`));
+const productCategoryData = JSON.parse(
+  fs.readFileSync(`${__dirname}/productCategory.json`),
+);
 
-const DB = process.env.DB_URL.replace('<password>', process.env.DB_PASS);
+const DB = process.env.DB_URL.replace('<password>', db);
 
 // mongoose
 //   .connect(DB, {
@@ -49,7 +55,22 @@ const importData = async () => {
       console.log('DB connection sucessfull!!!');
     });
 
-    await Product.create(allData);
+    const { _id } = await ProductCategory.findOne({
+      name: productData[17].productCategory,
+    });
+    const toBeImportedData = {
+      name: productData[17].name,
+      productsList: productData[17].productsList,
+      productCategory: _id,
+      available: productData[17].available,
+      image: productData[17].image,
+    };
+    await Product.create(toBeImportedData);
+
+    // await Product.create(productData[17]);
+    // productData.forEach((el, i) => {
+    //   console.log(productData[17]);
+    // });
     console.log('Sucessfully imported data');
   } catch (error) {
     console.log(error.message, 'errrrr');
