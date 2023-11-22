@@ -3,12 +3,12 @@ const mongoose = require('mongoose');
 const productsListSchema = mongoose.Schema({
   name: {
     type: String,
-    required: [true, 'A Menuitem must have a name e.g., Cheesecake'],
+    required: [true, 'A Menu item must have a name e.g., Cheesecake'],
   },
   image: String,
   price: {
     type: Number,
-    required: [true, 'A Menuitem must have a price tag e.g., 99.9$'],
+    required: [true, 'A Menu item must have a price tag e.g., 99.9$'],
   },
   description: String,
   stock: Number,
@@ -22,6 +22,9 @@ const productsListSchema = mongoose.Schema({
       message: 'Discount ({VALUE}) must be lower than the price.',
     },
   },
+  available: { type: Boolean, default: true },
+  custom: { type: Boolean, default: false },
+  customType: { type: String, default: '' },
 });
 
 const productSchema = mongoose.Schema({
@@ -44,6 +47,22 @@ const productSchema = mongoose.Schema({
     default: Date.now,
   },
 });
+
+// Mongoose Middleware - Query
+productSchema.pre(/^find/, function (next) {
+  this.find({ available: { $ne: false } });
+  next();
+});
+
+// Populate product categories before send tour responses
+// productSchema.pre(/^find/, function (next) {
+//   this.populate({
+//     path: 'productCategory',
+//     select: '-__v',
+//     model: 'ProductCategory',
+//   });
+//   next();
+// });
 
 const Product = mongoose.model('Product', productSchema);
 

@@ -47,3 +47,36 @@ exports.getOneProduct = factory.getOne(Product);
 exports.updateProduct = factory.updateOne(Product);
 
 exports.deleteProduct = factory.deleteOne(Product);
+
+exports.statsProduct = catchAsync(async (req, res, next) => {
+  const ProductData = await Product.aggregate([
+    // First Stage
+    {
+      $match: {
+        createdDate: {
+          $gte: new Date('2023-10-30'),
+          $lt: new Date('2023-12-31'),
+        },
+      },
+    },
+    // Second Stage
+    {
+      $group: {
+        _id: { createdDate: '$createdDate', name: '$name' },
+        // name: { name: '$name' },
+        // name: { $sum: { $multiply: ['$price', '$quantity'] } },
+        // averageQuantity: { $avg: '$quantity' },
+        // count: { $sum: 1 },
+      },
+    },
+    // Third Stage
+    // {
+    //   $sort: { totalSaleAmount: -1 },
+    // },
+  ]);
+
+  res.status(200).json({
+    status: 'success',
+    data: ProductData,
+  });
+});

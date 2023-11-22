@@ -7,11 +7,17 @@ const optionsSchema = mongoose.Schema({
 });
 
 const stepsToChooseSchema = mongoose.Schema({
+  custom: { type: Boolean, default: false },
+  customType: { type: String, default: '' },
   stepName: String,
   options: [optionsSchema],
 });
 
 const productCategorySchema = mongoose.Schema({
+  priority: {
+    type: Number,
+    required: true,
+  },
   name: {
     unique: true,
     type: String,
