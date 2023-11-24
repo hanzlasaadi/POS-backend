@@ -25,6 +25,14 @@ const commoditySchema = mongoose.Schema({
       'A Commodity must have a reference to the subcategory of that product (Milk Flavour, Fruit Flavour, etc)',
     ],
   },
+  // productId: {
+  //   type: mongoose.Schema.ObjectId,
+  //   ref: 'ProductsList',
+  //   required: [
+  //     true,
+  //     'A Commodity must have a reference to the product itselt from the productsList Schema (Veggie Pizza, Meat Pizza, etc)',
+  //   ],
+  // },
   productPrice: {
     type: Number,
     required: [true, 'A commodity must have a price'],
@@ -38,6 +46,10 @@ const commoditySchema = mongoose.Schema({
 });
 
 const orderSchema = mongoose.Schema({
+  createdDate: {
+    type: Date,
+    default: Date.now,
+  },
   workerId: {
     type: mongoose.Schema.ObjectId,
     ref: 'User',
@@ -78,6 +90,18 @@ const orderSchema = mongoose.Schema({
     ],
   },
   commodityList: [commoditySchema],
+  // tax: {
+  //   type: Number,
+  //   required: [true, 'Provide tax percenage with the order!'],
+  // },
+  // typeOfOrder: {
+  //   type: String,
+  //   enum: ['eatin', 'takeaway', 'delivery'],
+  //   required: [
+  //     true,
+  //     'Specify which type of order is this![Eat In, Take Away, Delivery]',
+  //   ],
+  // },
 });
 
 commoditySchema.pre('save', function (next) {
@@ -99,6 +123,24 @@ orderSchema.pre('save', function (next) {
     this.totalPrice *= this.count;
   }
   next(); // Continue with the save operation
+});
+
+// orderSchema.pre('save', function (next) {
+//   if (this.totalPrice && this.tax) {
+//     const taxPrice = (this.tax * this.totalPrice) / 100;
+//     this.totalPrice += taxPrice;
+//   }
+//   next(); // Continue with the save operation
+// });
+
+// Populate product categories before send tour responses
+orderSchema.pre(/^find/, function (next) {
+  this.populate({
+    path: 'workerId',
+    select: 'name email role',
+    model: 'User',
+  });
+  next();
 });
 
 const Order = mongoose.model('Order', orderSchema);

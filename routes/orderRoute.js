@@ -3,6 +3,8 @@ const orderController = require('../controllers/orderController');
 
 const router = express.Router();
 
+router.route('/stats').get(orderController.stats);
+
 router
   .route('/')
   .get(orderController.getAllOrders)
