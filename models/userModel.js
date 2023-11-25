@@ -2,7 +2,7 @@
 const bcryptjs = require('bcryptjs');
 const crypto = require('crypto');
 const { default: mongoose } = require('mongoose');
-const validation = require('validator');
+// const validation = require('validator');
 
 const userSchema = mongoose.Schema({
   name: {
@@ -17,7 +17,6 @@ const userSchema = mongoose.Schema({
     unique: true,
     trim: true,
     lowerCase: true,
-    validate: [validation.isEmail, 'Please input a proper email!'],
   },
   photo: {
     type: String,
@@ -26,7 +25,7 @@ const userSchema = mongoose.Schema({
   password: {
     type: String,
     required: [true, 'A user must have a password'],
-    minLength: [8, 'Password must be greater than 8 characters!!'],
+    minLength: [4, 'Password must be greater than 4 characters!!'],
     select: false,
   },
   passwordConfirm: {
@@ -47,10 +46,10 @@ const userSchema = mongoose.Schema({
   },
   role: {
     type: String,
-    default: 'user',
+    default: 'worker',
     enum: {
-      values: ['user', 'worker', 'admin', 'developer'],
-      message: 'Role must only contain user, worker or admin',
+      values: ['worker', 'admin', 'developer'],
+      message: 'Role must only contain worker or admin',
     },
   },
   active: {

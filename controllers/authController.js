@@ -8,13 +8,13 @@ const AppError = require('../utils/appError');
 // const sendEmail = require('../utils/email');
 // const Email = require('../utils/email');
 
-const signToken = (id) =>
-  jwt.sign({ id }, process.env.SECRET_JWT, {
+const signToken = (id, role) =>
+  jwt.sign({ id, role }, process.env.SECRET_JWT, {
     expiresIn: process.env.JWT_EXPIRATION,
   });
 
 const tokenAndSendResponse = (user, statusCode, res) => {
-  const token = signToken(user._id);
+  const token = signToken(user._id, user.role);
   const cookieOpts = {
     expires: new Date(
       Date.now() + process.env.JWT_COOKIE_EXPIRATION * 24 * 60 * 60 * 1000,
@@ -23,7 +23,7 @@ const tokenAndSendResponse = (user, statusCode, res) => {
   };
   if (process.env.NODE_ENV === 'production') cookieOpts.secure = true;
 
-  res.cookie('jwt', token, cookieOpts);
+  // res.cookie('jwt', token, cookieOpts);
   user.password = undefined;
 
   res.status(statusCode).json({
