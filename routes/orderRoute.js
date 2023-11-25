@@ -1,9 +1,14 @@
 const express = require('express');
 const orderController = require('../controllers/orderController');
+const authController = require('../controllers/authController');
 
 const router = express.Router();
 
+router.use(authController.verify);
+
 router.route('/stats').get(orderController.stats);
+
+router.use(authController.checkAdmin('worker', 'admin', 'developer'));
 
 router
   .route('/')

@@ -10,21 +10,25 @@ const productsListSchema = mongoose.Schema({
     type: Number,
     required: [true, 'A Menu item must have a price tag e.g., 99.9$'],
   },
-  description: String,
-  stock: Number,
-  discount: {
+  tax: {
     type: Number,
     default: 0,
-    validate: {
-      validator: function (val) {
-        return val <= this.price;
-      },
-      message: 'Discount ({VALUE}) must be lower than the price.',
-    },
   },
+  description: String,
+  stock: Number,
+  // discount: {
+  //   type: Number,
+  //   default: 0,
+  //   validate: {
+  //     validator: function (val) {
+  //       return val <= this.price;
+  //     },
+  //     message: 'Discount ({VALUE}) must be lower than the price.',
+  //   },
+  // },
   available: { type: Boolean, default: true },
   custom: { type: Boolean, default: false },
-  customType: { type: String, default: '' },
+  customType: { type: String, default: '', lowerCase: true },
 });
 
 const productSchema = mongoose.Schema({

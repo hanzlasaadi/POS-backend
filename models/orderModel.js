@@ -25,14 +25,14 @@ const commoditySchema = mongoose.Schema({
       'A Commodity must have a reference to the subcategory of that product (Milk Flavour, Fruit Flavour, etc)',
     ],
   },
-  // productId: {
-  //   type: mongoose.Schema.ObjectId,
-  //   ref: 'ProductsList',
-  //   required: [
-  //     true,
-  //     'A Commodity must have a reference to the product itselt from the productsList Schema (Veggie Pizza, Meat Pizza, etc)',
-  //   ],
-  // },
+  productId: {
+    type: mongoose.Schema.ObjectId,
+    ref: 'ProductsList',
+    required: [
+      true,
+      'A Commodity must have a reference to the product itselt from the productsList Schema (Veggie Pizza, Meat Pizza, etc)',
+    ],
+  },
   productPrice: {
     type: Number,
     required: [true, 'A commodity must have a price'],
@@ -42,7 +42,7 @@ const commoditySchema = mongoose.Schema({
     default: 1,
   },
   totalSalePrice: Number,
-  available: Boolean,
+  tax: Number,
 });
 
 const orderSchema = mongoose.Schema({
@@ -60,7 +60,15 @@ const orderSchema = mongoose.Schema({
   },
   paymentType: {
     type: String,
-    enum: ['Cash', 'Credit', 'Online'],
+    enum: ['Cash', 'Card', 'Online', 'JustEat', 'Deliveroo', 'UberEats'],
+    required: [
+      true,
+      'An order must have a payment type (cash, card, online or third party, etc)',
+    ],
+  },
+  override: {
+    type: Boolean,
+    default: false,
   },
   totalPrice: {
     type: Number,
@@ -77,6 +85,14 @@ const orderSchema = mongoose.Schema({
     required: [true, 'An order must contain how much the customer payed!'],
   },
   change: Number,
+  discountPercentage: {
+    type: Number,
+    default: 0,
+  },
+  discountedPrice: {
+    type: Number,
+    default: 0,
+  },
   count: {
     type: Number,
     default: 1,
@@ -86,7 +102,7 @@ const orderSchema = mongoose.Schema({
     enum: ['cancelled', 'pending', 'completed'],
     required: [
       true,
-      'An order must have a status: cancelled / pending / completed',
+      'An order must have a status: cancelled / pending / completed / waste',
     ],
   },
   commodityList: [commoditySchema],
@@ -94,20 +110,33 @@ const orderSchema = mongoose.Schema({
   //   type: Number,
   //   required: [true, 'Provide tax percenage with the order!'],
   // },
-  // typeOfOrder: {
-  //   type: String,
-  //   enum: ['eatin', 'takeaway', 'delivery'],
-  //   required: [
-  //     true,
-  //     'Specify which type of order is this![Eat In, Take Away, Delivery]',
-  //   ],
-  // },
+  typeOfOrder: {
+    type: String,
+    enum: ['eatin', 'takeaway', 'delivery'],
+    required: [
+      true,
+      'Specify which type of order is this![Eat In, Take Away, Delivery]',
+    ],
+  },
+  isWaste: {
+    type: Boolean,
+    required: true,
+  },
+  wasteReason: {
+    type: String,
+    validate: {
+      validator: function (value) {
+        // Ensure that field2 is only set when field1 is true
+        return this.isWaste === true || (this.isWaste && value !== undefined);
+      },
+      message:
+        "Waste Reason can only be set when the order's waste property is true",
+    },
+  },
 });
 
 commoditySchema.pre('save', function (next) {
-  if (this.productPrice) {
-    this.totalSalePrice = this.productPrice * this.unit;
-  }
+  this.totalSalePrice = Number((this.productPrice * this.unit).toFixed(2));
   next(); // Continue with the save operation
 });
 
@@ -121,6 +150,22 @@ orderSchema.pre('save', function (next) {
 orderSchema.pre('save', function (next) {
   if (this.totalPrice) {
     this.totalPrice *= this.count;
+  }
+  next(); // Continue with the save operation
+});
+
+orderSchema.pre('save', function (next) {
+  if (this.discountPercentage) {
+    const discountPrice = (this.discountPercentage * this.totalPrice) / 100;
+    this.discountedPrice = this.totalPrice - discountPrice;
+  }
+  next(); // Continue with the save operation
+});
+
+orderSchema.pre('save', function (next) {
+  if (this.status === 'waste') {
+    const discountPrice = (this.discountPercentage * this.totalPrice) / 100;
+    this.discountedPrice = this.totalPrice - discountPrice;
   }
   next(); // Continue with the save operation
 });
@@ -142,6 +187,28 @@ orderSchema.pre(/^find/, function (next) {
   });
   next();
 });
+
+// orderSchema.pre(/^find/, async function (next) {
+//   // this.commodityList.forEach((comm) => {
+//   //   comm.populate({
+//   //     path: 'subCategory',
+//   //     select: '-__v',
+//   //     model: 'Product',
+//   //   });
+//   // });
+//   // const userPromises = this.commodityList.map(
+//   // async (comm) => await Product.findById(comm.subCategory),
+//   // );
+//   // this.guides = await Promise.all(userPromises);
+//   // console.log(await Promise.all(userPromises));
+//   console.log(this.commodityList);
+//   next();
+// });
+
+// commoditySchema.pre(/^find/, (next) => {
+//   console.log('something');
+//   next();
+// });
 
 const Order = mongoose.model('Order', orderSchema);
 
