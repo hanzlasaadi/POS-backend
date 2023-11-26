@@ -48,7 +48,7 @@ const userSchema = mongoose.Schema({
     type: String,
     default: 'worker',
     enum: {
-      values: ['worker', 'admin', 'developer'],
+      values: ['worker', 'workerVIP', 'admin', 'developer'],
       message: 'Role must only contain worker or admin',
     },
   },
