@@ -23,7 +23,7 @@ const tokenAndSendResponse = (user, statusCode, res) => {
   };
   if (process.env.NODE_ENV === 'production') cookieOpts.secure = true;
 
-  // res.cookie('jwt', token, cookieOpts);
+  res.cookie('jwt', token, cookieOpts);
   user.password = undefined;
 
   res.status(statusCode).json({
@@ -102,6 +102,43 @@ exports.verify = catchAsync(async (req, res, next) => {
   res.locals.user = freshUser;
   req.user = freshUser;
   return next();
+});
+
+exports.verifyToken = catchAsync(async (req, res, next) => {
+  let token;
+  // 1. Getting token and checking if its there
+  if (
+    req.headers.authorization &&
+    req.headers.authorization.startsWith('Bearer')
+  ) {
+    token = req.headers.authorization.split(' ')[1];
+  } else if (req.cookies.jwt) {
+    token = req.cookies.jwt;
+  }
+
+  if (!token) return next(new AppError(401, 'Please Login!!!'));
+
+  // 2. Verification of the token
+  const decodedData = await promisify(jwt.verify)(
+    token,
+    process.env.SECRET_JWT,
+  );
+
+  // 3. Checking if user still exists
+  const freshUser = await User.findById(decodedData.id);
+  // console.log(freshUser);
+
+  // 4. Check if user changed password after the token was issued.
+  if (freshUser.checkChangedPassword(decodedData.iat))
+    return next(new AppError('User changed password recently, Login again!!!'));
+
+  // Every Test is passed and user is verified
+  // res.locals.user = freshUser;
+  // req.user = freshUser;
+  return res.status(200).json({
+    status: 'success',
+    data: freshUser,
+  });
 });
 
 exports.isLoggedIn = async function (req, res, next) {
