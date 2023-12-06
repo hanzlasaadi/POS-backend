@@ -16,6 +16,7 @@ const orderRoute = require('./routes/orderRoute');
 const saleRoute = require('./routes/saleRoute');
 const cashRoute = require('./routes/cashRoute');
 const optionsRoute = require('./routes/optionsRoute');
+const customerRoute = require('./routes/customerRoute');
 
 const app = express();
 
@@ -41,6 +42,7 @@ app.use('/api/v1/order', orderRoute);
 app.use('/api/v1/sale', saleRoute);
 app.use('/api/v1/cash', cashRoute);
 app.use('/api/v1/step', optionsRoute);
+app.use('/api/v1/customer', customerRoute);
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {
