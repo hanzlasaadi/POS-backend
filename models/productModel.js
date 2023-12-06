@@ -1,8 +1,13 @@
 const mongoose = require('mongoose');
 
 const productsListSchema = mongoose.Schema({
+  priority: {
+    type: Number,
+    required: [true, 'A product list item must have a priority number!'],
+  },
   name: {
     type: String,
+    trim: true,
     required: [true, 'A Menu item must have a name e.g., Cheesecake'],
   },
   image: String,
@@ -14,7 +19,11 @@ const productsListSchema = mongoose.Schema({
     type: Number,
     default: 0,
   },
-  description: String,
+  description: {
+    type: String,
+    trim: true,
+    default: '',
+  },
   stock: Number,
   // discount: {
   //   type: Number,
@@ -29,6 +38,11 @@ const productsListSchema = mongoose.Schema({
   available: { type: Boolean, default: true },
   custom: { type: Boolean, default: false },
   customType: { type: String, default: '', lowerCase: true },
+  steps: {
+    type: mongoose.Schema.ObjectId,
+    ref: 'Step',
+    // required: [true, 'A product list item must have a referance to its steps!'],
+  },
 });
 
 const productSchema = mongoose.Schema({
@@ -64,6 +78,16 @@ productSchema.pre(/^find/, function (next) {
 //     path: 'productCategory',
 //     select: '-__v',
 //     model: 'ProductCategory',
+//   });
+//   next();
+// });
+
+// productSchema.pre(/^find/, function (next) {
+//   // Populate the 'steps' field in 'productsList'
+//   this.populate({
+//     path: 'productsList.steps',
+//     // select: '-__v',
+//     model: 'Step',
 //   });
 //   next();
 // });

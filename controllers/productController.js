@@ -1,17 +1,18 @@
-const ProductCategory = require('../models/productCategoryModel');
+// const ProductCategory = require('../models/productCategoryModel');
 const Product = require('../models/productModel');
 const AppError = require('../utils/appError');
 const catchAsync = require('../utils/catchAsync');
 const factory = require('./factoryHandlers');
 
 exports.newProduct = catchAsync(async (req, res, next) => {
-  const { _id } = await ProductCategory.findOne({
-    name: req.body.productCategory,
-  });
+  // const { _id } = await ProductCategory.findOne({
+  //   name: req.body.productCategory,
+  // });
   const productData = {
     name: req.body.name,
     productsList: req.body.productsList,
-    productCategory: _id,
+    productCategory: req.body.productCategory,
+    steps: req.body.steps,
     available: req.body.available,
     image: req.body.image,
     createdDate: req.body.createdDate,

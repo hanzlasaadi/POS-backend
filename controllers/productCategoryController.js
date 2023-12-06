@@ -4,6 +4,7 @@ const factory = require('./factoryHandlers');
 exports.newProductCategory = async (req, res, next) => {
   try {
     const productCategoryData = {
+      priority: req.body.priority,
       name: req.body.name,
       available: req.body.available,
       typeOfFood: req.body.typeOfFood,
