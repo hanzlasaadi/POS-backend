@@ -1,9 +1,12 @@
 const productCategoryModel = require('../models/productCategoryModel');
+const APIFeatures = require('../utils/apiFeatures');
+const catchAsync = require('../utils/catchAsync');
 const factory = require('./factoryHandlers');
 
 exports.newProductCategory = async (req, res, next) => {
   try {
     const productCategoryData = {
+      access: req.body.access,
       priority: req.body.priority,
       name: req.body.name,
       available: req.body.available,
@@ -50,7 +53,28 @@ exports.newProductCategory = async (req, res, next) => {
 //   }
 // };
 
-exports.getAllProductCategory = factory.getAll(productCategoryModel);
+exports.getAllProductCategory = catchAsync(async (req, res, next) => {
+  const { access } = req.query;
+
+  // Making "API Features" Instance
+  const features = new APIFeatures(productCategoryModel.find(), req.query);
+
+  // Running all class methods;
+  features.filter().limitFields().sort().paginate();
+
+  // Executing Query;
+  let documents = await features.query;
+
+  if (access) {
+    documents = documents.filter((doc) => doc.access.includes(access));
+  }
+
+  res.send({
+    status: 'success',
+    results: documents.length,
+    data: documents,
+  });
+});
 
 // exports.createProductCategory = factory.createOne(productCategoryModel);
 

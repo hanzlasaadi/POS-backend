@@ -14,12 +14,16 @@ const stepsToChooseSchema = mongoose.Schema({
 });
 
 const productCategorySchema = mongoose.Schema({
+  access: {
+    type: [String],
+    required: [true, 'Specify the access either website or POS'],
+  },
   priority: {
     type: Number,
     required: true,
   },
   name: {
-    unique: true,
+    // unique: true,
     type: String,
     required: [true, 'A tour must have a name e.g., Milkshakes, Cakes, etc'],
     trim: true,

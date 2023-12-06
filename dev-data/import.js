@@ -12,7 +12,9 @@ const Product = require(`${__dirname}/../models/productModel`);
 
 dotenv.config({ path: `${__dirname}/../config.env` });
 
-const arg = process.argv.find((el) => el === '--import' || el === '--delete');
+const arg = process.argv.find(
+  (el) => el === '--import' || el === '--delete' || el === '--update',
+);
 console.log('Fuck yes: ', arg);
 
 // const allData = JSON.parse(
@@ -78,5 +80,35 @@ const importData = async () => {
   process.exit();
 };
 
+const updateData = async () => {
+  try {
+    await mongoose.connect(DB).then(() => {
+      console.log('DB connection sucessfull!!!');
+    });
+
+    const updatedDoc = await ProductCategory.findOneAndUpdate(
+      { priority: 0 },
+      { access: ['pos'] },
+      {
+        new: true,
+        runValidators: true,
+      },
+    );
+
+    // const updatedDoc = await ProductCategory.find({ priority: 1 });
+
+    // await Product.create(productData[17]);
+    // productData.forEach((el, i) => {
+    //   console.log(productData[17]);
+    // });
+    console.log('Sucessfully updated data');
+    console.log(updatedDoc);
+  } catch (error) {
+    console.log(error.message, 'errrrr');
+  }
+  process.exit();
+};
+
 if (arg === '--import') importData();
-else if (arg === '--delete') deleteData();
+// else if (arg === '--delete') deleteData();
+else if (arg === '--update') updateData();
