@@ -1,5 +1,16 @@
 const mongoose = require('mongoose');
 
+function slugify(str) {
+  return String(str)
+    .normalize('NFKD') // split accented characters into their base characters and diacritical marks
+    .replace(/[\u0300-\u036f]/g, '') // remove all the accents, which happen to be all in the \u03xx UNICODE block.
+    .trim() // trim leading or trailing whitespace
+    .toLowerCase() // convert to lowercase
+    .replace(/[^a-z0-9 -]/g, '') // remove non-alphanumeric characters
+    .replace(/\s+/g, '-') // replace spaces with hyphens
+    .replace(/-+/g, '-'); // remove consecutive hyphens
+}
+
 const optionsSchema = mongoose.Schema({
   type: String,
   image: String,
@@ -14,6 +25,12 @@ const stepsToChooseSchema = mongoose.Schema({
 });
 
 const productCategorySchema = mongoose.Schema({
+  image: {
+    type: String,
+    default: function () {
+      return `${slugify(this.name)}.jpg`;
+    },
+  },
   access: {
     type: [String],
     required: [true, 'Specify the access either website or POS'],
