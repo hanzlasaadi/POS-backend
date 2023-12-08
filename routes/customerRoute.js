@@ -20,6 +20,7 @@ router.route('/resetPassword/:token').patch(authController.resetPassword);
 //You need to be logged in after this line;;;
 router.use(authController.verify);
 // ☝ This verifies all routes after this middleware
+router.route('/order').post(customerController.getCheckoutSession);
 router.route('/logout').get(authController.logout);
 router.patch(
   '/updateMe',
