@@ -1,3 +1,5 @@
+/* eslint-disable no-await-in-loop */
+/* eslint-disable no-restricted-syntax */
 /* eslint-disable node/no-unpublished-require */
 /* eslint-disable no-unused-vars */
 /* eslint-disable import/no-dynamic-require */
@@ -80,20 +82,37 @@ const importData = async () => {
   process.exit();
 };
 
+function slugify(str) {
+  return String(str)
+    .normalize('NFKD') // split accented characters into their base characters and diacritical marks
+    .replace(/[\u0300-\u036f]/g, '') // remove all the accents, which happen to be all in the \u03xx UNICODE block.
+    .trim() // trim leading or trailing whitespace
+    .toLowerCase() // convert to lowercase
+    .replace(/[^a-z0-9 -]/g, '') // remove non-alphanumeric characters
+    .replace(/\s+/g, '-') // replace spaces with hyphens
+    .replace(/-+/g, '-'); // remove consecutive hyphens
+}
+
 const updateData = async () => {
   try {
     await mongoose.connect(DB).then(() => {
       console.log('DB connection sucessfull!!!');
     });
+    const documents = await ProductCategory.find();
+    const docs = [];
 
-    const updatedDoc = await ProductCategory.findOneAndUpdate(
-      { priority: 0 },
-      { access: ['pos'] },
-      {
-        new: true,
-        runValidators: true,
-      },
-    );
+    for (const document of documents) {
+      const defaultImage = `${slugify(document.name)}.jpg`;
+      console.log(defaultImage);
+      await ProductCategory.findByIdAndUpdate(
+        document._id,
+        { image: defaultImage },
+        {
+          new: true,
+          runValidators: true,
+        },
+      );
+    }
 
     // const updatedDoc = await ProductCategory.find({ priority: 1 });
 
@@ -102,11 +121,12 @@ const updateData = async () => {
     //   console.log(productData[17]);
     // });
     console.log('Sucessfully updated data');
-    console.log(updatedDoc);
+    // console.log(updatedDoc);
   } catch (error) {
     console.log(error.message, 'errrrr');
+  } finally {
+    process.exit();
   }
-  process.exit();
 };
 
 if (arg === '--import') importData();
