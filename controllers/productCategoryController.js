@@ -1,7 +1,62 @@
+/* eslint-disable import/no-extraneous-dependencies */
+const multer = require('multer');
+const sharp = require('sharp');
 const productCategoryModel = require('../models/productCategoryModel');
 const APIFeatures = require('../utils/apiFeatures');
+const AppError = require('../utils/appError');
 const catchAsync = require('../utils/catchAsync');
 const factory = require('./factoryHandlers');
+
+// const multerStorage = multer.diskStorage({
+//   destination: (req, file, cb) => {
+//     cb(null, `./public/images/categories`);
+//   },
+//   filename: (req, file, cb) => {
+//     const ext = file.mimetype.split('/')[1];
+//     cb(null, `category-${req.params.id}-${Date.now()}.${ext}`);
+//   },
+// });
+const multerStorage = multer.memoryStorage();
+
+const multerFilter = (req, file, cb) => {
+  if (file.mimetype.startsWith('image')) {
+    cb(null, true);
+  } else {
+    cb(new AppError('Not an image! Please upload only images.', 400), false);
+  }
+};
+
+const upload = multer({
+  storage: multerStorage,
+  fileFilter: multerFilter,
+});
+
+exports.uploadCategoryImage = upload.single('image');
+
+exports.resizePhoto = catchAsync(async (req, res, next) => {
+  if (!req.file) return next();
+
+  req.file.filename = `category-${req.params.id}-${Date.now()}.jpeg`;
+
+  await sharp(req.file.buffer)
+    .toFormat('jpeg')
+    .jpeg({ quality: 75 })
+    .toFile(`./public/images/categories/${req.file.filename}`);
+
+  const updatedDoc = await productCategoryModel.findByIdAndUpdate(
+    req.params.id,
+    { image: req.file.filename },
+    {
+      new: true,
+      runValidators: true,
+    },
+  );
+
+  res.status(201).json({
+    status: 'success',
+    data: updatedDoc,
+  });
+});
 
 exports.newProductCategory = async (req, res, next) => {
   try {

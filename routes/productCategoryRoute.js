@@ -20,4 +20,11 @@ router
   .patch(productCategoryController.updateProductCategory)
   .delete(productCategoryController.deleteProductCategory);
 
+router
+  .route('/imageUpload/:id')
+  .post(
+    productCategoryController.uploadCategoryImage,
+    productCategoryController.resizePhoto,
+  );
+
 module.exports = router;
