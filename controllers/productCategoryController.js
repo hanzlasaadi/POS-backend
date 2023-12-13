@@ -52,7 +52,7 @@ exports.resizePhoto = catchAsync(async (req, res, next) => {
     },
   );
 
-  res.status(201).json({
+  return res.status(201).json({
     status: 'success',
     data: updatedDoc,
   });

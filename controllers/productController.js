@@ -1,8 +1,55 @@
 // const ProductCategory = require('../models/productCategoryModel');
+const multer = require('multer');
+const sharp = require('sharp');
 const Product = require('../models/productModel');
 const AppError = require('../utils/appError');
 const catchAsync = require('../utils/catchAsync');
 const factory = require('./factoryHandlers');
+const ProductCategory = require('../models/productCategoryModel');
+
+const multerStorage = multer.memoryStorage();
+
+const multerFilter = (req, file, cb) => {
+  if (file.mimetype.startsWith('image')) {
+    cb(null, true);
+  } else {
+    cb(new AppError('Not an image! Please upload only images.', 400), false);
+  }
+};
+
+const upload = multer({
+  storage: multerStorage,
+  fileFilter: multerFilter,
+});
+
+exports.uploadCategoryImage = upload.single('image');
+
+exports.resizePhoto = catchAsync(async (req, res, next) => {
+  if (!req.file) return next();
+
+  req.file.filename = `product-${req.params.productId}-${Date.now()}.jpeg`;
+
+  await sharp(req.file.buffer)
+    .toFormat('jpeg')
+    .jpeg({ quality: 75 })
+    .toFile(`./public/images/products/${req.file.filename}`);
+
+  const updatedDoc = await ProductCategory.findById(req.params.subCategoryId);
+  const newList = updatedDoc.productsList.map((doc) => {
+    if (doc._id === req.params.subCategoryId) {
+      doc.image = req.file.filename;
+      return doc;
+    }
+    return doc;
+  });
+  updatedDoc.productsList = newList;
+  const newDoc = await updatedDoc.save();
+
+  return res.status(201).json({
+    status: 'success',
+    data: newDoc,
+  });
+});
 
 exports.newProduct = catchAsync(async (req, res, next) => {
   // const { _id } = await ProductCategory.findOne({

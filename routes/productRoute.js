@@ -25,4 +25,8 @@ router
   .patch(productController.updateProduct)
   .delete(productController.deleteProduct);
 
+router
+  .route('/imageUpload')
+  .post(productController.uploadCategoryImage, productController.resizePhoto);
+
 module.exports = router;
