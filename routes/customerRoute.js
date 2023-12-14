@@ -15,12 +15,12 @@ router.route('/login').post(authController.login);
 router.route('/forgotPassword').post(authController.forgotPassword);
 router.route('/resetPassword/:token').patch(authController.resetPassword);
 
+router.route('/order-online').post(customerController.getCheckoutSession);
 // router.route('/verifyToken').get(authController.verifyToken);
 
 //You need to be logged in after this line;;;
 router.use(authController.verify);
 // ☝ This verifies all routes after this middleware
-router.route('/order').post(customerController.getCheckoutSession);
 router.route('/logout').get(authController.logout);
 router.patch(
   '/updateMe',

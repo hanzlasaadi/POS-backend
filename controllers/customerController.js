@@ -1,7 +1,10 @@
+/* eslint-disable import/order */
+/* eslint-disable node/no-unpublished-require */
 /* eslint-disable import/no-extraneous-dependencies */
 // const multer = require('multer');
 // const sharp = require('sharp');
-const stripe = require('stripe')(process.env.STRIPE_KEY);
+const pKey = require('../stripeKey');
+const stripe = require('stripe')(pKey);
 const factory = require('./factoryHandlers');
 const Customer = require('../models/customerModel');
 const AppError = require('../utils/appError');
@@ -126,8 +129,9 @@ exports.addNewUser = (req, res) => {
 
 exports.getCheckoutSession = catchAsync(async (req, res, next) => {
   // 1) Get the currently booked tour
-  const tour = await Customer.findById(req.params.tourId);
+  // const CustomerLoggedIn = await Customer.findById(req.params.customerId);
   // console.log(tour);
+  console.log(req.body);
 
   // 2) Create checkout session
   const session = await stripe.checkout.sessions.create({
@@ -137,24 +141,60 @@ exports.getCheckoutSession = catchAsync(async (req, res, next) => {
     //   req.params.tourId
     // }&user=${req.user.id}&price=${tour.price}`,
 
-    success_url: `${req.protocol}://${req.get('host')}/my-tours?alert=booking`,
+    success_url: `https://foodeliciousbristol.co.uk/`,
 
-    cancel_url: `${req.protocol}://${req.get('host')}/tour/${tour.slug}`,
+    cancel_url: `https://foodeliciousbristol.co.uk/`,
+    mode: 'payment',
 
-    customer_email: req.user.email,
+    // customer_email: 'hanzla@protonmail.com',
 
-    client_reference_id: req.params.tourId,
+    // client_reference_id: req.params.tourId,
 
-    line_items: [
+    line_items: req.body.products.map((comm) => ({
+      price_data: {
+        currency: 'gbp',
+        product_data: {
+          name: comm.name,
+        },
+        unit_amount: comm.productPrice * 100,
+      },
+      quantity: comm.unit,
+    })),
+    shipping_address_collection: {
+      allowed_countries: ['GB'],
+    },
+    shipping_options: [
       {
-        name: `${tour.name} Tour`,
-        description: tour.summary,
-        images: [
-          `${req.protocol}://${req.get('host')}/img/tours/${tour.imageCover}`,
-        ],
-        amount: tour.price * 100,
-        currency: 'usd',
-        quantity: 1,
+        shipping_rate_data: {
+          type: 'fixed_amount',
+          fixed_amount: {
+            amount: 0,
+            currency: 'gbp',
+          },
+          display_name: 'Free shipping',
+          delivery_estimate: {
+            maximum: {
+              unit: 'hour',
+              value: 1,
+            },
+          },
+        },
+      },
+      {
+        shipping_rate_data: {
+          type: 'fixed_amount',
+          fixed_amount: {
+            amount: 299,
+            currency: 'gbp',
+          },
+          display_name: 'Standard Shipping',
+          delivery_estimate: {
+            maximum: {
+              unit: 'hour',
+              value: 1,
+            },
+          },
+        },
       },
     ],
   });
@@ -162,6 +202,7 @@ exports.getCheckoutSession = catchAsync(async (req, res, next) => {
   // 3) Create session as response
   res.status(200).json({
     status: 'success',
+    sessionId: session.id,
     session,
   });
 });
