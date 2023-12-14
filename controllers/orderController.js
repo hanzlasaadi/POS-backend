@@ -1,55 +1,55 @@
-const Cash = require('../models/cashModel');
+// const Cash = require('../models/cashModel');
 const Order = require('../models/orderModel');
 const AppError = require('../utils/appError');
 const catchAsync = require('../utils/catchAsync');
 const factory = require('./factoryHandlers');
 
-const updateCashDoc = async (order, next) => {
-  const today = new Date();
-  today.setUTCHours(0, 0, 0, 0);
-  const startDate = today;
-  const endDate = new Date(today.getTime() + 24 * 60 * 60 * 1000);
+// const updateCashDoc = async (order, next) => {
+//   const today = new Date();
+//   today.setUTCHours(0, 0, 0, 0);
+//   const startDate = today;
+//   const endDate = new Date(today.getTime() + 24 * 60 * 60 * 1000);
 
-  const [existingDocument] = await Cash.find({
-    date: {
-      $gte: startDate,
-      $lt: endDate,
-    },
-  });
+//   const [existingDocument] = await Cash.find({
+//     date: {
+//       $gte: startDate,
+//       $lt: endDate,
+//     },
+//   });
 
-  if (!existingDocument)
-    return next(new AppError(400, 'Could not find cash doc for today!'));
+//   if (!existingDocument)
+//     return next(new AppError(400, 'Could not find cash doc for today!'));
 
-  if (!(order.discountedPrice === 0)) {
-    existingDocument.drawerDeposits.push(order.discountedPrice);
-    existingDocument.drawerAmount += order.discountedPrice;
-  } else {
-    existingDocument.drawerDeposits.push(order.totalPrice);
-    existingDocument.drawerAmount += order.totalPrice;
-  }
+//   if (!(order.discountedPrice === 0)) {
+//     existingDocument.drawerDeposits.push(order.discountedPrice);
+//     existingDocument.drawerAmount += order.discountedPrice;
+//   } else {
+//     existingDocument.drawerDeposits.push(order.totalPrice);
+//     existingDocument.drawerAmount += order.totalPrice;
+//   }
 
-  const total = existingDocument.drawerDeposits.reduce(
-    (acc, crr) => acc + crr,
-    0,
-  );
+//   const total = existingDocument.drawerDeposits.reduce(
+//     (acc, crr) => acc + crr,
+//     0,
+//   );
 
-  if (total > process.env.DRAWER_LIMIT) {
-    console.log('limit reached!');
-    existingDocument.lockerDeposits.push(process.env.LOCKER_SUBMIT);
-    existingDocument.lockerAmount += process.env.LOCKER_SUBMIT;
-    existingDocument.drawerAmount -= process.env.LOCKER_SUBMIT;
-  }
+//   if (total > process.env.DRAWER_LIMIT) {
+//     console.log('limit reached!');
+//     existingDocument.lockerDeposits.push(process.env.LOCKER_SUBMIT);
+//     existingDocument.lockerAmount += process.env.LOCKER_SUBMIT;
+//     existingDocument.drawerAmount -= process.env.LOCKER_SUBMIT;
+//   }
 
-  console.log(order, 'orderToBeUpdated!');
-  console.log(existingDocument, 'cashDocToBeUpdated!');
-  console.log(total, 'totalDrawerDeps!');
+//   console.log(order, 'orderToBeUpdated!');
+//   console.log(existingDocument, 'cashDocToBeUpdated!');
+//   console.log(total, 'totalDrawerDeps!');
 
-  // Update the document
-  // existingDocument.drawerLimit = 70;
-  const updatedDoc = await existingDocument.save();
-  // console.log('Document updated for the day.');
-  return updatedDoc;
-};
+//   // Update the document
+//   // existingDocument.drawerLimit = 70;
+//   const updatedDoc = await existingDocument.save();
+//   // console.log('Document updated for the day.');
+//   return updatedDoc;
+// };
 
 exports.checkBody = (req, res, next) => {
   if (!req.body)
@@ -116,14 +116,14 @@ exports.createOrder = catchAsync(async (req, res, next) => {
   if (!newDoc)
     return next(new AppError(401, 'New Order could not be created!!!'));
 
-  const updatedCash = await updateCashDoc(newDoc, next);
-  if (!updatedCash)
-    return next(new AppError(400, 'Could not update cash!, but order created'));
+  // const updatedCash = await updateCashDoc(newDoc, next);
+  // if (!updatedCash)
+  // return next(new AppError(400, 'Could not update cash!, but order created'));
 
   return res.status(201).json({
     status: 'success',
     orderData: newDoc,
-    cashData: updatedCash,
+    // cashData: updatedCash,
   });
 });
 
